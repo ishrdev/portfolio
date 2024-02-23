@@ -1,0 +1,30 @@
+{
+    "name": "Portfolio",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node",
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "ms-azuretools.vscode-docker",
+                "esbenp.prettier-vscode",
+                "pranaygp.vscode-css-peek",
+                "ecmel.vscode-html-css",
+                "zignd.html-css-class-completion",
+                "sidthesloth.html5-boilerplate",
+                "xabikos.javascriptsnippe",
+                "mgmcdermott.vscode-language-babel",
+                "ms-vscode.vscode-typescript-next",
+                "ritwickdey.liveserver"
+            ],
+            "settings": {
+                "git.path": "/usr/bin/git",
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    }
+}
