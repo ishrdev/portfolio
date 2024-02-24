@@ -98,13 +98,16 @@ header {
 
 .dropdown-menu.open {
     height: 170px;
-    ;
 }
 
 
 /* responsive design*/
 @media(max-width: 750px){
-    .navbar-container .links,
+    
+    .navbar-container .links {
+        display: none;
+    }
+
     .navbar-container .burger-menu {
         display: block;
     }
