@@ -232,6 +232,56 @@ header {
     gap: 3rem;
 }
 
+/* ABOUT SECTION */
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 300px;
+    height: auto;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.details-containers {
+    padding: 1.5rem;
+    flex: 1;
+    background: #EAE0D5;
+    border-radius: 2rem;
+    border: #534537 0.1rem solid;
+    border-color: #534537;
+    text-align: center;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    height: auto;
+    width: 250px;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin-left: 150px;
+    left: 2rem;
+}
+
 /* RESPONSIVE DESIGN */
 @media(max-width: 750px){
     
