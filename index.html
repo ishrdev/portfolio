@@ -10,14 +10,12 @@
     <!-- Navbar -->
     <header>
         <div class="navbar-container">
-            <div class="logo">
-                <a href="#" id="logo">Ishara Musippaththu</a>
-            </div>
+            <div class="logo">Ishara Musippaththu</div>
             <ul class="links">
-                <li><a href="home">Home</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="aboutme">About Me</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger-menu">
                 <div class="bar1"></div>
@@ -26,12 +24,30 @@
             </div>
         </div>
         <div class="dropdown-menu">
-            <li><a href="home">Home</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="aboutme">About Me</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </div>
     </header>
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ishara Musippaththu</h1>
+            <p class="section__text__p2">and I'm an aspiring UX/UI Designer and Frontend Developer</p>
+            <div class="action-btns">
+                <div class="button-container">
+                    <button class="btn btn-v1" onclick="location.href='./#contact'">Contact Info</button> 
+                </div>
+                <div id="socials-container">
+                    <img src="./public/images/github-mark.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/'"
+                    />
+                </div>
+            </div>    
+        </section>
     <script src="public/javascripts/app.js"></script>
 </body>
 </html>
