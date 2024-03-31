@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishara Musippaththu</title>
+
+    <!-- SwiperJS -->
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
     <link rel="stylesheet" href="public/stylesheets/style.css"/>
 </head>
 <body>
@@ -30,15 +40,15 @@
             <li><a href="#contact">Contact</a></li>
         </div>
     </header>
-    <section id="profile">
+    <section id="home">
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Ishara Musippaththu</h1>
             <p class="section__text__p2">and I'm an aspiring UX/UI Designer and Frontend Developer</p>
             <div class="action-btns">
-                <div class="button-container">
+                <!--<div class="button-container">
                     <button class="btn btn-v1" onclick="location.href='./#contact'">Contact Info</button> 
-                </div>
+                </div> -->
                 <div id="socials-container">
                     <img src="./public/images/github-mark.png"
                         alt="My Github profile"
@@ -46,39 +56,286 @@
                         onclick="location.href='https://github.com/'"
                     />
                 </div>
-            </div>    
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get to Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section__pic-container">
-                    <img
-                    src="./public/images/image.jpg"
-                    alt="Profile picture"
-                    class="about-pic"
-                    />
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-containers">
-                            <img width="50" height="50" 
-                            src="https://img.icons8.com/ios-filled/50/22333B/book-and-pencil.png" 
-                            alt="book-and-pencil"
-                            class="icon"
-                            />
-                            <h3>Education</h3>
-                            <p>Medieninformatik B.Sc.<br />HKA </p>
-                        </div>
+            </div>
+        </div>    
+    </section>
+    <section id="aboutme">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img width="50" height="50" 
+                        src="https://img.icons8.com/ios-filled/50/22333B/book-and-pencil.png" 
+                        alt="book-and-pencil"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Medieninformatik B.Sc.<br />HKA </p>
                     </div>
-                    <div class="text-container">
-                        <p>
-                            I'm a media computer science student who is passionate about ux/ui design. My journey as a UX/UI designer as well as a Frontend developer has just begun, yet I'm eager and ambitious to learn new skills that will help me become a UX designer who designs the best solutions for users.
-                        </p>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm a media computer science student who is passionate about ux/ui design. My journey as a UX/UI designer as well as a Frontend developer has just begun, yet I'm eager and ambitious to learn new skills that will help me become a UX designer who designs the best solutions for users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2   h2 class="experience-subtitle">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                            <h3>Material UI</h3>
+                            <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </section> 
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <p class="title">Projects</p>
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="project_slide-container">
+                    <div class="swiper-wrapper">
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/mmk_shot.png"
+                                alt="Project 1"
+                                class="project-img"
+                                />
+                            </div>    
+                            <h2 class="experience-subtitle project-title">Smart-Blinds App</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/webseite1.png"
+                                alt="Project 2"
+                                class="project-img"
+                                />
+                            </div>
+                            <h2 class="experience-subtitle project-title">Project Two</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/webseite1.png"
+                                alt="Project 3"
+                                class="project-img"
+                                />
+                            </div>
+                            <h2 class="experience-subtitle project-title">Hotel Website</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/github-mark.png"
+                                alt="Project 2"
+                                class="project-img"
+                                />
+                            </div>
+                            <h2 class="experience-subtitle project-title">Project Four</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/github-mark.png"
+                                alt="Project 2"
+                                class="project-img"
+                                />
+                            </div>
+                            <h2 class="experience-subtitle project-title">Project Five</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card swiper-slide">
+                            <div class="article-container">
+                                <img
+                                src="./public/images/github-mark.png"
+                                alt="Project 2"
+                                class="project-img"
+                                />
+                            </div>
+                            <h2 class="experience-subtitle project-title">Project Six</h2>
+                            <div class="button-container">
+                                <button class="btn btn-v1 project-btn" onclick="location.href='https://github.com/'">
+                                Open Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ishara Musippaththu. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="public/javascripts/app.js"></script>
 </body>
 </html>
