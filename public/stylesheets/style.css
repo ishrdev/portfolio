@@ -243,6 +243,87 @@ section {
     margin-bottom: 2rem;
 }
 
+.about-container {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.education {
+    display: flex;
+    width: 100%;
+    border: #afa093 0.1rem solid;
+    box-shadow: 0 2px 15px 0px #6d5d4c;
+    border-radius: 1.5rem;
+    padding: 1em;
+}
+
+.uni-pic img {
+    width: 150px;
+    height: auto;
+}
+
+.uni-info {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.uni-text {
+    margin-top: 1em;
+    margin-left: 0.25em;
+}
+
+.uni-text h4 {
+    font-weight: 650;
+    margin-top: 0.5em;
+}
+
+.interests {
+    display: flex;
+    width: 100%;
+    border: #afa093 0.1rem solid;
+    box-shadow: 0 2px 15px 0px #6d5d4c;
+    border-radius: 1.5rem;
+    padding: 1em;
+}
+
+.interests-info {
+    margin-left: 1em;
+}
+
+.interests-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    gap: 15px;
+    margin-top: 1em;
+}
+
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.text-container {
+    display: flex;
+    width: auto;
+    margin-top: 2rem;
+    padding: 1em;
+    border: #afa093 0.1rem solid;
+}
+
+.text {
+    font-size: 14pt;
+    font-weight: 500;
+}
 .about-details-container {
     justify-content: center;
     flex-direction: column;
@@ -646,7 +727,7 @@ nav {
 
     #home,
     .section-container {
-        display: block;
+        display: flex;
     }
 
     section,
