@@ -241,7 +241,6 @@ section {
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    border: #0A0908 0.1rem solid;
 }
 
 .about-details-container {
@@ -284,8 +283,6 @@ section {
 /* PROFICIENCY SECTION */
 #proficiency {
     position: relative;
-    height: 100vh;
-    margin-bottom: 10rem;
 }
 
 .skills-containers {
@@ -411,9 +408,75 @@ article .icon {
     cursor: default;
 }
 
+
+/* CERTIFICATES SECTION */
+#certificates {
+    position: relative;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cert-acq {
+    display: flex;
+    flex-direction: column;
+    border: #afa093 0.1rem solid;
+    box-shadow: 0 2px 15px 0px #6d5d4c;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 525px;
+    gap: 1rem;
+    margin: 0 13em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-name {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cert-content {
+    display: flex;
+    justify-content: baseline;
+    align-content: start;
+    justify-content: space-between;
+}
+
+.certs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certs li {
+    list-style-type: disc;
+    text-align:start;
+    font-weight: 500;
+    margin: 1em;
+    align-items: center;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 0.3em;
+}
+
+
 /* PROJECTS SECTION */
 #projects {
     position: relative;
+    margin-top: 5em;
 }
 
 .project-card {

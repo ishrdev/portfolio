@@ -12,8 +12,6 @@ menu.addEventListener('click', animateMenu)
 const observer = new IntersectionObserver(entries => {
     
     entries.forEach(entry => {
-        console.log(entry);
-        console.log(entry.isIntersecting);
         if (entry.isIntersecting) {
             entry.target.classList.add('progress-animation');
         } else {
@@ -24,10 +22,9 @@ const observer = new IntersectionObserver(entries => {
     });
     
     //Get multiple elements instead of a single one using "querySelectorAll"
-    const squares = document.querySelectorAll('.progress');
-    //console.log(squares);
+    const bars = document.querySelectorAll('.progress');
     // Loop over the elements and add each one to the observer
-    squares.forEach((element) => observer.observe(element));
+    bars.forEach((element) => observer.observe(element));
 
 
 
