@@ -148,6 +148,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    margin-bottom: 3em;
 }
 
 .section__text {
@@ -233,14 +234,14 @@ section {
 }
 
 /* ABOUT SECTION */
-#about {
+#aboutme {
     position: relative;
 }
 
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    border: #0A0908 0.1rem solid;
 }
 
 .about-details-container {
@@ -271,7 +272,7 @@ section {
 }
 
 .section-container {
-    gap: 4rem;
+    gap: 1rem;
     height: 80%;
 }
 .section__pic-container {
@@ -280,16 +281,108 @@ section {
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-#experience {
+/* PROFICIENCY SECTION */
+#proficiency {
     position: relative;
+    height: 100vh;
+    margin-bottom: 10rem;
 }
 
-.experience-subtitle {
+.skills-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    margin-top: 2rem;
+    gap: 30px;
+    height:auto;
+    width: auto;
+}
+
+.skills-info {
+    border: #afa093 0.1rem solid;
+    box-shadow: 0 2px 15px 0px #6d5d4c;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    width: 400px;
+    text-align: center;
+}
+
+.skills__categories {
     color:#534537;
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 0.25rem;
+}
+
+.progress-bars {
+    list-style-type: none;
+    padding: 0.5em;
+    width: auto;
+    margin: 1em;
+}
+
+.progress-bars li {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    width: 85%;
+    height: 0.5em;
+    background: #afa093;
+    border-radius: 10px;
+    margin: 1.3em 0;
+}
+
+.progress {
+    background: linear-gradient(
+        90deg,
+        #283c45,
+        #22333B
+    );
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+    box-shadow: 0 0 3px #22333B;
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 1em;
+    height: 100%;
+    background: #fff;
+    border-radius: inherit;
+    box-shadow: 0 0 20px #fff;
+    fill: blur(10px);
+}
+
+.percentage {
+    position: relative;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+/* ANIMATION SKILL BARS*/
+@media (prefers-reduced-motion: no-preference) {
+    .progress-animation {  
+        animation: fillBars 2.5s 1;
+    }
+
+    @keyframes fillBars{
+        from{
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
 }
 
 .experience-details-container {
@@ -510,6 +603,15 @@ nav {
 
     .about-containers {
         margin-top: 0;
+    }
+
+    .progress-bars {
+        width: 80%;
+    }
+
+    .skills-containers {
+        flex-wrap: wrap;
+        width: fit-content;
     }
 }
 
