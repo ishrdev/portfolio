@@ -53,6 +53,7 @@ a, .btn {
 header {
     position: relative;
     padding: 0 2rem;
+    z-index: 1;
 }
 
 .navbar-container {
@@ -142,6 +143,10 @@ section {
     display: flex;
 }
 
+canvas {
+    display: flex;
+}
+
 /* SECTION PROFILE */
 #home {
     display: flex;
@@ -151,11 +156,24 @@ section {
     margin-bottom: 3em;
 }
 
+#bg-canvas {  
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0px;
+    width: 1519px;
+    height: 710px;
+    border: #afa093 0.1rem solid;
+    box-shadow: 0 2px 15px 0px #6d5d4c;
+}
+
 .section__text {
     align-self: center;
     text-align: center;
     justify-content: center;
     height:max-content;
+    z-index: 1;
 }
 
 .section__text p {
@@ -236,6 +254,7 @@ section {
 /* ABOUT SECTION */
 #aboutme {
     position: relative;
+    margin-top: 8em;
 }
 
 .about-containers {

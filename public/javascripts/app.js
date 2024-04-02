@@ -8,6 +8,22 @@ const animateMenu = () => {
 
 menu.addEventListener('click', animateMenu)
 
+// animated background for home section
+VANTA.FOG({
+    el: "#bg-canvas",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    highlightColor: 0x846700,
+    midtoneColor: 0x6d5d4c,
+    lowlightColor: 0x22333B,
+    baseColor: 0xEAE0D5,
+    blurFactor: 0.50,
+    speed: 0.60,
+    zoom: 0.40
+})
+
+
 // animation on scroll 
 const observer = new IntersectionObserver(entries => {
     
