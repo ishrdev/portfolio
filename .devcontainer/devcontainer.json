@@ -19,7 +19,8 @@
                 "xabikos.javascriptsnippe",
                 "mgmcdermott.vscode-language-babel",
                 "ms-vscode.vscode-typescript-next",
-                "ritwickdey.liveserver"
+                "ritwickdey.liveserver",
+                "codezombiech.gitignore"
             ],
             "settings": {
                 "git.path": "/usr/bin/git",
