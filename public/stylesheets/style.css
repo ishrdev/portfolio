@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    color:#534537;
+    color: #6d5d4c;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
@@ -136,7 +136,6 @@ section {
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
 .section-container {
@@ -161,10 +160,9 @@ canvas {
     position: absolute;
     z-index: 0;
     top: 0;
-    left: 0px;
-    width: 1519px;
-    height: 710px;
-    border: #afa093 0.1rem solid;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     box-shadow: 0 2px 15px 0px #6d5d4c;
 }
 
@@ -257,11 +255,6 @@ canvas {
     margin-top: 8em;
 }
 
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
 .about-container {
     display: flex;
     gap: 35px;
@@ -336,7 +329,6 @@ canvas {
     width: auto;
     margin-top: 2rem;
     padding: 1em;
-    border: #afa093 0.1rem solid;
 }
 
 .text {
@@ -362,12 +354,6 @@ canvas {
     border-color: #afa093;
     text-align: center;
     box-shadow: 0 2px 15px 0px #6d5d4c;
-}
-
-.about-pic {
-    border-radius: 2rem;
-    height: auto;
-    width: 250px;
 }
 
 .section-container {
@@ -483,12 +469,6 @@ canvas {
     }
 }
 
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .article-container {
     display: flex;
     text-align: initial;
@@ -497,18 +477,6 @@ canvas {
     gap: 2rem;
     justify-content: center;
 }
-
-article {
-    display: flex;
-    width: 11rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
-
-article .icon {
-    cursor: default;
-}
-
 
 /* CERTIFICATES SECTION */
 #certificates {
@@ -578,6 +546,7 @@ article .icon {
 #projects {
     position: relative;
     margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .project-card {
@@ -838,9 +807,8 @@ nav {
     }
 }
 
+@media(min-width: 481px) and (max-width: 768px){
 
-@media(max-width: 750px){
-    
     .navbar-container .links {
         display: none;
     }
@@ -890,17 +858,77 @@ nav {
         flex-wrap: wrap;
         width: fit-content;
     }
-}
-
-@media(max-width: 576px){
-
+    
     .dropdown-menu {
         left: 2rem;
-        width: unset;    
+        width: unset; 
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .interests-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
+    } 
+    
+    .skills-containers {
+        flex-wrap: wrap;
+    }
+
+    .goals-container {
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+
+    .goals-tech {
+        width: 100%
+    }
+
+    .swiper {
+        width: 95%;
+        border-radius: 2rem;
+    }
+
+    .goals-cert, 
+    .goals-projects {
+        width: 100%;
+    }
+
+    .nav-links-container {
+        margin-bottom: 2em;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+
+    .navbar-container .links {
+        display: none;
+    }
+
+    .navbar-container .burger-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    #home,
+    .section-container {
+        display: flex;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
 
     footer {
         height: 40vh;
@@ -926,6 +954,16 @@ nav {
         flex-wrap: wrap;
     }
 
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .interests-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
+    } 
+
     .contact-info-container {
         margin: 0;
     }
@@ -949,6 +987,11 @@ nav {
         text-align: center;
     }
 
+    #bg-canvas {
+        width: calc(99% + 4px);
+        height: 100vh;
+    }
+
     .section__pic-container {
         width: auto;
         height: 46vw;
@@ -968,7 +1011,8 @@ nav {
     }
 
     .swiper {
-        width: 400px;
+        width: 95%;
+        border-radius: 2rem;
     }
 
     .project_slide-container {
@@ -977,6 +1021,23 @@ nav {
 
     .swiper-button-next,
     .swiper-button-prev {
-        display: block;
+        display:none;
+    }
+
+    .skills-containers {
+        flex-wrap: wrap;
+    }
+
+    .goals-container {
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+
+    .goals-tech {
+        width: 100%
+    }
+
+    .nav-links-container {
+        margin-bottom: 2em;
     }
 }
