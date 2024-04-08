@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishara Musippaththu</title>
+
+    <link rel="stylesheet" href="public/stylesheets/project-style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <div class="logo">Ishara Musippaththu</div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#link_proj">Projects</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#link_proj">Projects</a></li>
+        </div>
+    </header>
+    <div id="mockup">
+        <div class="mockup-container">
+            <img src="public/images/online_view.png" alt="browsergame view">
+        </div>
+    </div>
+    <section id="project">
+        <div class="project-container">
+            <div class="proj-text">
+                <div class="project-title">
+                    <h2>"Man, Don't Get Angry!" Browsergame</h2>
+                </div>
+                <div class="project-descr">
+                    Currently, I'm developing a browser game inspired by the renowned German board game 
+                    "Mensch Ärgere Dich Nicht." Fond memories of playing it with my family in childhood persist, and it 
+                    remains a cherished pastime today. Adapting it for digital play allows me to share the joy and nostalgia
+                    with a wider audience, bridging generations through this beloved classic.
+                </div>
+            </div>
+            <div class="project-stat">
+                <div class="stat-category">
+                    SETTING
+                    <li>Own Project</li>
+                </div>
+                <div class="stat-category">
+                    TIMELINE
+                    <li>1.5 Weeks</li>
+                </div>
+                <div class="stat-category">
+                    STATUS
+                    <li>Ongoing</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="modelling">
+        <div class="design-container">
+            <h3>Designing</h3>
+            <div class="model-text">
+                In crafting the project's design, I created custom playboard and background graphics with Adobe Illustrator. 
+                To enhance interactivity, I modeled the pawns and dice as 3D assets using Blender. 
+                These elements play integral roles in the game's mechanics. Utilizing HTML, CSS, and JavaScript forms 
+                the core of the project's development, while integrating my 3D models seamlessly with the THREE.js API.
+            </div>
+            <div class="design-assets">
+                <img src="public/images/playboard.png" alt="UV Mapping of Animation Strip" id="bildstreifen">
+                <img src="public/images/Dice.png" alt="isometric view of  wired zoetrope">
+                <img src="public/images/Pawns.png" alt="zoomed view of cogwheels as wireframe"> 
+            </div>
+        </div>
+    </section>
+    <section id="link_proj">
+        <h2>See Other Projects</h2>
+        <div class="link-proj-container">
+            <li onclick="location.href='project-onirique.html'">Hotel Website</li>
+            <li onclick="location.href='project-blck'">Smart Blinds App</li>
+            <li onclick="location.href='project-passport.html'">Fictive Passport</li>
+        </div>
+    </section>
+    <script type="module" src="public/javascripts/projects.js"></script>
+</body>
+</html>
