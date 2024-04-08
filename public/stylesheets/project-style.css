@@ -110,11 +110,11 @@ header {
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(000, 000, 000, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown-menu li {
@@ -126,7 +126,8 @@ header {
 
 
 .dropdown-menu.open {
-    height: 170px;
+    height: auto;
+    padding: 2em;
 }
 
 /* SECTION */
@@ -265,14 +266,14 @@ section {
     margin-top: 2em;
 }
 
+.ideas-text-img img {
+    height: auto;
+    width: 50%;
+}
+
 .ideas-text {
     width: fit-content;
     margin-right: 2em;
-}
-
-.ideas-text-img  img {
-    width: 100%;
-    height: auto;
 }
 
 .images-container {
@@ -285,7 +286,18 @@ section {
     display: flex;
     gap: 2em;
     width: 100%;
-    height: auto;
+    height: fit-content;
+}
+
+
+.img-ideas {
+    display: flex;
+    margin-top: 2em;
+    gap: 2em;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SOLUTION SECTION */
@@ -331,7 +343,6 @@ section {
     height: 100%s;
 }
 
-
 /* LINKS SECTION */
 #link_proj {
     position: relative;
@@ -366,6 +377,120 @@ section {
 .mockup2 {
     position: relative;
     margin-bottom: 8em;
+}
+
+/*ONIRIQUE*/
+.website-screens {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+
+/*ZOETROPE PROJECT*/
+#zoetrope {
+    position: relative;
+}
+
+.zoetrope-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoetrope-container img {
+    width: 100%;
+    height: auto;
+}
+
+#modelling {
+    position: relative;
+    height: fit-content;
+    margin-bottom: 8em;
+}
+
+.modelling-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.modelling-container img {
+    width: 100%;
+    border-radius: 1.5em;
+    height: auto;
+}
+
+.model-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+.wired-img {
+    display: flex;
+    gap: 2em;
+}
+
+#bildstreifen {
+    width: 60%;
+}
+
+
+/*PASSPORT PROJECT*/
+#passport {
+    position: relative;
+    height: fit-content;
+}
+
+.passport-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.passport-container img {
+    border-radius: 0.7em;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*MDGA PROJECT*/
+
+.design-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    gap: 2em;
+}
+.design-container h3{
+    text-align: left;
+}
+
+.design-assets {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.design-container img {
+    width: 100%;
+    border-radius: 1.5em;
+    height: auto;
 }
 
 /* RESPONSIVE DESIGN */
@@ -414,6 +539,18 @@ section {
     #link_proj h2 {
         font-size: 15pt;
         margin-bottom: 2em;
+    }
+
+    .wired-img {
+        flex-wrap: wrap;
+    }
+
+    #bildstreifen {
+        width: 100%;
+    }
+
+    .website-screens {
+        width: 100%;
     }
 
 }
@@ -491,5 +628,17 @@ section {
     #link_proj h2 {
         font-size: larger;
         margin-bottom: 2em;
+    }
+
+    .wired-img {
+        flex-wrap: wrap;
+    }
+
+    #bildstreifen {
+        width: 100%;
+    }
+
+    .website-screens {
+        width: 100%;
     }
 }
