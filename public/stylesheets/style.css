@@ -152,7 +152,7 @@ canvas {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
-    margin-bottom: 3em;
+    margin-bottom: 8em;
 }
 
 #bg-canvas {  
@@ -252,7 +252,9 @@ canvas {
 /* ABOUT SECTION */
 #aboutme {
     position: relative;
+    height: fit-content;
     margin-top: 8em;
+    margin-bottom: 8em;
 }
 
 .about-container {
@@ -335,15 +337,6 @@ canvas {
     font-size: 14pt;
     font-weight: 500;
 }
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
-}
 
 .details-containers {
     padding: 1.5rem;
@@ -369,6 +362,8 @@ canvas {
 /* PROFICIENCY SECTION */
 #proficiency {
     position: relative;
+    height: fit-content;
+    margin-bottom: 8em;
 }
 
 .skills-containers {
@@ -483,6 +478,8 @@ canvas {
     position: relative;
     margin-top: 2rem;
     justify-content: center;
+    height: fit-content;
+    margin-bottom: 8em;
 }
 
 .cert-container {
@@ -545,8 +542,8 @@ canvas {
 /* PROJECTS SECTION */
 #projects {
     position: relative;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    height: fit-content;
+    margin-bottom: 8em;
 }
 
 .project-card {
@@ -648,6 +645,8 @@ canvas {
 /* GOALS SECTION */
 #goals {
     position: relative;
+    height: fit-content;
+    margin-bottom: 8em;
 }
 
 .goals-container {
@@ -787,16 +786,9 @@ nav {
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 1400px) {
+@media(min-width: 1600px) and (max-width: 3000px) {
     #home {
         height: 83vh;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
-
-    #projects {
-        height: fit-content;
     }
 
     .swiper-button-prev {
@@ -805,7 +797,60 @@ nav {
     .swiper-button-next {
         right: -1rem;
     }
+
+    .education,
+    .interests{
+        justify-content: center;
+    }
 }
+
+
+@media(min-width: 1025px) and (max-width: 1200px) {
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .interests-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
+    }
+
+    .education,
+    .interests{
+        justify-content: center;
+    }
+
+    .skills-containers {
+        flex-wrap: wrap;
+    }
+
+    .swiper {
+        width: 95%;
+        border-radius: 2rem;
+    }
+
+    .swiper-container { /* card__container swiper */
+        padding-block: 2rem;
+    }
+} 
 
 @media(min-width: 481px) and (max-width: 768px){
 
@@ -844,10 +889,6 @@ nav {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
-    }
-
-    .about-containers {
-        margin-top: 0;
     }
 
     .progress-bars {
@@ -948,7 +989,6 @@ nav {
         margin-bottom: 2rem;
     }
 
-    .about-containers,
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
@@ -1016,7 +1056,7 @@ nav {
     }
 
     .project_slide-container {
-        width: 380px;
+        width: 390px;
     }
 
     .swiper-button-next,
