@@ -484,6 +484,7 @@ canvas {
 
 .cert-container {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
@@ -493,8 +494,8 @@ canvas {
     border: #afa093 0.1rem solid;
     box-shadow: 0 2px 15px 0px #6d5d4c;
     border-radius: 1.5rem;
-    padding: 1.5rem;
-    width: 525px;
+    padding: 2rem 5rem;
+    width: max-content;
     gap: 1rem;
     margin: 0 13em;
     justify-content: center;
