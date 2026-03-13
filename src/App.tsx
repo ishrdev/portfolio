@@ -1,6 +1,7 @@
 import githubLogo from './assets/Github.svg'
 import linkedInLogo from './assets/Linkedin.svg'
 import DarkVeil from './assets/DarkVeil'
+import Navbar from './components/Navbar'
 
 import './App.css'
 
@@ -19,6 +20,7 @@ function App() {
         />
       </div>
       <div className='row-start-1 col-start-1 justify-around'>
+        <Navbar/>
         <div className='flex flex-col h-svh content-center justify-evenly justify-items-center px-8'>
           <div className='flex flex-col gap-16'>
             <div className='title md:text-6xl -mb-8 text-4xl'>ISHARA MUSIPPATHTHU</div>
