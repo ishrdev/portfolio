@@ -2,6 +2,7 @@ import githubLogo from './assets/Github.svg'
 import linkedInLogo from './assets/Linkedin.svg'
 import DarkVeil from './assets/DarkVeil'
 import Navbar from './components/Navbar'
+import MagicBento from './components/MagicBento'
 
 import './App.css'
 
@@ -38,6 +39,25 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col flexstart '>
+          <div className="title text-2xl text-left mb-8">SELECTED WORK</div>
+          <MagicBento 
+            textAutoHide={true}
+            enableStars={false}
+            enableSpotlight
+            enableBorderGlow={true}
+            enableTilt={false}
+            enableMagnetism={false}
+            clickEffect
+            spotlightRadius={410}
+            particleCount={12}
+            glowColor="132, 0, 255"
+            disableAnimations={false}
+          />
+          <div className="text-xl mt-8">See more projects</div>
         </div>
       </div>
     </div>
