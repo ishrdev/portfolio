@@ -6,6 +6,7 @@ export interface BentoCardProps {
   title?: string;
   description?: string;
   label?: string;
+  image?: string,
   textAutoHide?: boolean;
   disableAnimations?: boolean;
 }
@@ -670,6 +671,9 @@ const MagicBento: React.FC<BentoProps> = ({
 
             const cardStyle = {
               backgroundColor: card.color || 'var(--background-dark)',
+              backgroundImage: card.image ? `url(${card.image})` : undefined,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
               borderColor: 'var(--border-color)',
               color: 'var(--white)',
               '--glow-x': '50%',
