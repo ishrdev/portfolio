@@ -20,7 +20,7 @@ function App() {
           warpAmount={0}
         />
       </div>
-      <div className='row-start-1 col-start-1 justify-around'>
+      <section id='home' className='row-start-1 col-start-1 justify-around'>
         <Navbar/>
         <div className='flex flex-col h-svh content-center justify-evenly justify-items-center px-8'>
           <div className='flex flex-col gap-16'>
@@ -40,9 +40,9 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col flexstart '>
+      </section>
+      <section id='work'className='flex justify-center'>
+        <div className='flex flex-col flexstart'>
           <div className="title text-2xl text-left mb-8">SELECTED WORK</div>
           <MagicBento 
             textAutoHide={true}
@@ -57,7 +57,9 @@ function App() {
             glowColor="132, 0, 255"
             disableAnimations={false}
           />
-          <div className="text-xl mt-8">See more projects</div>
+          <div className="text-xl mt-12">See more projects</div>
+        </div>
+      </section>
         </div>
       </div>
     </div>
