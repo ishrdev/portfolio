@@ -161,6 +161,10 @@ function App() {
             </div>
         </div>
       </div>
+      </section>
+      <footer className='m-8'>
+        <p>Copyright &#169; 2026 Ishara Musippaththu. All Rights Reserved.</p>
+    </footer>
     </div>
   )
 }
