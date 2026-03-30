@@ -13,6 +13,16 @@ function App() {
     {name: 'Affinity', logo: logos.affinity}
   ];
 
+  const frontendSkills = [
+    { name: 'TypeScript', logo: logos.ts },
+    { name: 'JavaScript', logo: logos.js },
+    { name: 'Vue.js', logo: logos.vue },
+    { name: 'Vuetify', logo: logos.vuetify },
+    { name: 'React', logo: logos.react },
+    { name: 'TailwindCSS', logo: logos.tw },
+    { name: 'HTML5', logo: logos.html },
+    { name: 'CSS', logo: logos.css },
+  ];
   return (
     <div className='grid gap-2'>
       <div className="w-full h-screen -z-1 row-start-1 col-start-1">
@@ -76,6 +86,17 @@ function App() {
                   <div className='flex items-center'>
                   <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
                 ))}
+              </div>
+            </div>
+            <div className='flex row-start-2 items-start'>
+              <div className='title text-xl text-left min-w-45'>Frontend</div>
+              <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 w-full'>
+                {frontendSkills.map(skill => (
+                  <div className='flex items-center'>
+                  <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
+                ))}
+              </div>
+            </div>
               </div>
             </div>
         </div>
