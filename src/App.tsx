@@ -37,6 +37,12 @@ function App() {
     {name: 'MongoDB', logo: logos.mongodb},
   ]
 
+  const cadSkills = [
+    {name: 'Autodesk Maya', logo: logos.maya},
+    {name: 'Blender', logo: logos.blender},
+    {name: 'Rhino 3D', logo: logos.rhino},
+  ]
+
   return (
     <div className='grid gap-2'>
       <div className="w-full h-screen -z-1 row-start-1 col-start-1">
@@ -124,6 +130,15 @@ function App() {
               <div className='title text-xl text-left min-w-45'>Database</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
                 {dbSkills.map(skill => (
+                  <div className='flex items-center'>
+                  <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
+                ))}
+              </div>
+            </div>
+            <div className='flex row-start-5 items-center'>
+              <div className='title text-xl text-left min-w-45'>CAD Modelling</div>
+              <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
+                {cadSkills.map(skill => (
                   <div className='flex items-center'>
                   <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
                 ))}
