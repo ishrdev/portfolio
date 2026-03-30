@@ -43,6 +43,12 @@ function App() {
     {name: 'Rhino 3D', logo: logos.rhino},
   ]
 
+  const toolsSkills = [
+    {name: 'Git', logo: logos.git},
+    {name: 'Bitbucket', logo: logos.bitbucket},
+    {name: 'Jira', logo: logos.jira},
+  ]
+  
   return (
     <div className='grid gap-2'>
       <div className="w-full h-screen -z-1 row-start-1 col-start-1">
@@ -144,6 +150,13 @@ function App() {
                 ))}
               </div>
             </div>
+<div className='flex row-start-6 items-center'>
+              <div className='title text-xl text-left min-w-45'>Tools</div>
+              <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
+                {toolsSkills.map(skill => (
+                  <div className='flex items-center'>
+                  <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
+                ))}
               </div>
             </div>
         </div>
