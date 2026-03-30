@@ -23,6 +23,14 @@ function App() {
     { name: 'HTML5', logo: logos.html },
     { name: 'CSS', logo: logos.css },
   ];
+
+  const backendSkills = [
+    {name: 'Python', logo: logos.py},
+    {name: 'Java', logo: logos.jv},
+    {name: 'FastAPI', logo: logos.fastapi},
+    {name: 'LangChain', logo: logos.langchain}
+  ]
+
   return (
     <div className='grid gap-2'>
       <div className="w-full h-screen -z-1 row-start-1 col-start-1">
@@ -92,6 +100,15 @@ function App() {
               <div className='title text-xl text-left min-w-45'>Frontend</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 w-full'>
                 {frontendSkills.map(skill => (
+                  <div className='flex items-center'>
+                  <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
+                ))}
+              </div>
+            </div>
+            <div className='flex row-start-3 items-center'>
+              <div className='title text-xl text-left min-w-45'>Backend</div>
+              <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6'>
+                {backendSkills.map(skill => (
                   <div className='flex items-center'>
                   <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
                 ))}
