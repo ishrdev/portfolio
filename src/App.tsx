@@ -3,6 +3,7 @@ import linkedInLogo from './assets/Linkedin.svg'
 import DarkVeil from './assets/DarkVeil'
 import Navbar from './components/Navbar'
 import MagicBento from './components/MagicBento'
+import logos from './assets/logos.tsx'
 
 import './App.css'
 
@@ -32,10 +33,10 @@ function App() {
             <p className='text-xl'>Let's connect!</p>
             <div className='w-full flex align-middle justify-center'>
               <a href="https://www.linkedin.com/in/ishara-musippaththu" target="_blank">
-                <img src={linkedInLogo} className="logo" alt="LinkedIn logo" />
+                <img src={logos.linkedIn} className="logo" alt="LinkedIn logo" />
               </a>
               <a href="https://vite.dev" target="_blank">
-                <img src={githubLogo} className="logo" alt="Github logo" />
+                <img src={logos.github} className="logo" alt="Github logo" />
               </a>
             </div>
           </div>
