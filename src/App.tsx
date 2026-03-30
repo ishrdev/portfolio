@@ -1,5 +1,3 @@
-import githubLogo from './assets/Github.svg'
-import linkedInLogo from './assets/Linkedin.svg'
 import DarkVeil from './assets/DarkVeil'
 import Navbar from './components/Navbar'
 import MagicBento from './components/MagicBento'
@@ -8,6 +6,12 @@ import logos from './assets/logos.tsx'
 import './App.css'
 
 function App() {
+  const designSkills = [
+    {name: 'Figma', logo: logos.figma},
+    {name: 'Adobe Photoshop', logo: logos.photoshop},
+    {name: 'Adobe Illustrator', logo: logos.illustrator},
+    {name: 'Affinity', logo: logos.affinity}
+  ];
 
   return (
     <div className='grid gap-2'>
@@ -61,6 +65,19 @@ function App() {
           <div className="text-xl mt-12">See more projects</div>
         </div>
       </section>
+      <section id='skills' className='flex justify-center'>
+        <div className='flex flex-col content-center justify-center'>
+          <div className='title text-2xl text-left mb-8'>SKILLS</div>
+          <div className='grid gap-8'>
+            <div className='flex row-start-1 items-center'>
+              <div className='title text-xl text-left min-w-45'>Design</div>
+              <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6'>
+                {designSkills.map(skill => (
+                  <div className='flex items-center'>
+                  <img src={skill.logo} alt={skill.name} className='logo'/>{skill.name}</div>
+                ))}
+              </div>
+            </div>
         </div>
       </div>
     </div>
