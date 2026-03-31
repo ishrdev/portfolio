@@ -1,6 +1,7 @@
 import DarkVeil from '../assets/DarkVeil'
 import MagicBento from '../components/MagicBento'
 import logos from '../assets/logos.tsx'
+import Separator from '../components/Seperator.tsx'
 
 import '../App.css'
 
@@ -113,6 +114,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            <div className='my-8'><Separator/></div>
             <div className='flex row-start-2 items-start'>
               <div className='title text-xl text-left min-w-45'>Frontend</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 w-full'>
@@ -122,6 +124,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            <div className='my-8'><Separator/></div>
             <div className='flex row-start-3 items-center'>
               <div className='title text-xl text-left min-w-45'>Backend</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6'>
@@ -131,6 +134,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            <div className='my-8'><Separator/></div>
             <div className='flex row-start-4 items-center'>
               <div className='title text-xl text-left min-w-45'>Database</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
@@ -140,6 +144,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            <div className='my-8'><Separator/></div>
             <div className='flex row-start-5 items-center'>
               <div className='title text-xl text-left min-w-45'>CAD Modelling</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
@@ -149,6 +154,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            <div className='my-8'><Separator/></div>
             <div className='flex row-start-6 items-center'>
               <div className='title text-xl text-left min-w-45'>Tools</div>
               <div className='grid grid-cols-2 lg:grid-cols-4 w-full gap-6 justify-evenly'>
