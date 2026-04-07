@@ -1,4 +1,7 @@
 import Card from '../components/Card'
+import TechTag from '../components/TechTag'
+import logos from '../assets/logos'
+
 function Work() {
   return(
     <>
@@ -16,6 +19,10 @@ function Work() {
             <div className='flex flex-col w-1/2 text-left gap-4'>
               <h2 className='title'>FairGig</h2>
               <p>Tracking and comparing income based on anonymous data</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Figma' icon={logos.figma}/>
+                <TechTag name='Affinity' icon={logos.affinity}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -30,6 +37,17 @@ function Work() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
                 ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
                 repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='React' icon={logos.react}/>
+                <TechTag name='Next.js' icon={logos.nextjs}/>
+                <TechTag name='shadcn/ui'/>
+                <TechTag name='Python' icon={logos.py}/>
+                <TechTag name='LangChain' icon={logos.langchain}/>
+                <TechTag name='FastAPI' icon={logos.fastapi}/>
+                <TechTag name='MongoDB' icon={logos.mongodb}/>
+                <TechTag name='Figma' icon={logos.figma}/>
+                <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -37,7 +55,6 @@ function Work() {
               <Card
                 title="BLCK"
                 route="/projects/blck"
-                enableParticles={false}
               />
             </div>
             <div className='flex flex-col w-1/2 text-left gap-4'>
@@ -45,6 +62,11 @@ function Work() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
                 ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
                 repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Figma' icon={logos.figma}/>
+                <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
+                <TechTag name='Adobe Photoshop' icon={logos.photoshop}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -59,6 +81,13 @@ function Work() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
                 ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
                 repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Figma' icon={logos.figma}/>
+                <TechTag name='React' icon={logos.react}/>
+                <TechTag name='Vite.js' icon={logos.vite}/>
+                <TechTag name='TypeScript' icon={logos.ts}/>
+                <TechTag name='TailwindCSS' icon={logos.tw}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -73,6 +102,11 @@ function Work() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
                 ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
                 repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Autodesk Maya' icon={logos.maya}/>
+                <TechTag name='Adobe Photoshop' icon={logos.photoshop}/>
+                <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -84,9 +118,15 @@ function Work() {
             </div>
             <div className='flex flex-col w-1/2 text-left gap-4'>
               <h2 className='title'>Onirique Hotels</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloremque cum recusandae, excepturi 
-                ipsa laudantium rem expedita beatae distinctio natus reiciendis fuga animi nam optio veniam vel molestias, 
-                eos rerum!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
+                ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
+                repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Figma' icon={logos.figma}/>
+                <TechTag name='Adobe Photoshop' icon={logos.photoshop}/>
+                <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
+                <TechTag name='Rhino3D' icon={logos.rhino}/>
+              </div>
             </div>
           </div>
           <div className='flex gap-6'>
@@ -101,6 +141,10 @@ function Work() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
                 ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
                 repellendus vitae soluta eius!</p>
+              <div className='flex flex-wrap w-full gap-4'>
+                <TechTag name='Adobe Photoshop' icon={logos.photoshop}/>
+                <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
+              </div>
             </div>
           </div>
         </div>

@@ -9,6 +9,8 @@ import js from './logos_svgs/JavaScript.svg'
 import vue from './logos_svgs/Vue.js.svg'
 import vuetify from './logos_svgs/Veutify.svg'
 import react from './logos_svgs/React.svg'
+import nextjs from './logos_svgs/Next.js.svg'
+import vite from './logos_svgs/Vite.js.svg'
 import tw from './logos_svgs/TailwindCSS.svg'
 import html from './logos_svgs/HTML5.svg'
 import css from './logos_svgs/CSS3.svg'
@@ -38,6 +40,8 @@ const logos = {
   vue,
   vuetify,
   react,
+  nextjs,
+  vite,
   tw,
   html,
   css,
