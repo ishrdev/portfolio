@@ -12,9 +12,9 @@ const Navbar = () => {
         <NavLink to="/Work">Work</NavLink>
         <NavLink to="/Contact">Contact</NavLink>*/}
         <ul className="flex flex-row w-min justify-between items-center gap-8">
-          <li>Home</li>
+          <li><a href="/">Home</a></li>
           <li>About</li>
-          <li>Work</li>
+          <li><a href="/Work">Work</a></li>
           <li>Contact</li>
         </ul>
       </div>

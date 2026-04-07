@@ -2,6 +2,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.tsx'
 import Navbar from './components/Navbar'
+import Work from './pages/Work.tsx'
+
 import './App.css'
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='/work' element={<Work />}/>
         </Routes>
       </BrowserRouter>
       <footer className='m-8'>
