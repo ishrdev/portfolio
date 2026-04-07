@@ -62,7 +62,6 @@ export default function Home() {
         />
       </div>
       <section id='home' className='row-start-1 col-start-1 justify-around'>
-        {/*<Navbar/>*/}
         <div className='flex flex-col h-svh content-center justify-evenly justify-items-center px-8'>
           <div className='flex flex-col gap-16'>
             <div className='title md:text-6xl -mb-8 text-4xl'>ISHARA MUSIPPATHTHU</div>
