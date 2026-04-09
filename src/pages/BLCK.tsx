@@ -1,6 +1,8 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
 import blckBanner from "../assets/images/blck/blck_banner.png"
+import Emma from "../assets/images/blck/Emma_Persona.jpg"
+import Max from "../assets/images/blck/Max_Persona.jpg"
 
 function BLCK() {
   return (
@@ -47,6 +49,17 @@ function BLCK() {
         Interface for a smart blinds application. Assigned as a university assignment, we went through a thorough process 
         involving case studies, intensive research, and a UX interview to create an intuitive and user-friendly interface 
         that would revolutionize user interaction with smart blinds.</p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Empathizing & Defining</h2>
+        <p>Empathy is pivotal in UX design, fostering a deep understanding of users' needs, emotions, and behaviors. 
+          By empathizing, we gain insights vital for crafting meaningful experiences. It allows stepping into users' shoes, 
+          identifying pain points, and designing solutions that resonate. For this phase of the "Design-Thinking-Process" 
+          we created Personas that would represent our target group.</p>
+        <div className="flex gap-8 my-4">
+          <img src={Emma} alt="Persona Emma Müller" className="w-1/2 rounded-2xl" />
+          <img src={Max} alt="Persona Max Schmidt" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
     </div>
     </>
   )
