@@ -43,6 +43,10 @@ function BLCK() {
           </div>
         </div>
       </div>
+      <p>In the realm of modern technology, our group undertook a captivating project to design a Graphical User 
+        Interface for a smart blinds application. Assigned as a university assignment, we went through a thorough process 
+        involving case studies, intensive research, and a UX interview to create an intuitive and user-friendly interface 
+        that would revolutionize user interaction with smart blinds.</p>
     </div>
     </>
   )
