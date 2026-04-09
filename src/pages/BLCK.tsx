@@ -1,9 +1,14 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
+import blckBanner from "../assets/images/blck/blck_banner.png"
 
 function BLCK() {
   return (
     <>
+    <div className=" relative h-[50%] w-full overflow-hidden">
+      <img src={blckBanner} alt="BLCK Mockup Shot" className="w-full h-full object-cover" />
+      <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent" />
+    </div>
     <div className="flex flex-col w-full justify-center items-start p-8 gap-16 text-left">
       <div className="title text-4xl">BLCK</div>
       <div className="flex w-full justify-between gap-8">
