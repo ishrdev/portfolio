@@ -3,6 +3,8 @@ import logos from "../assets/logos"
 import blckBanner from "../assets/images/blck/blck_banner.png"
 import Emma from "../assets/images/blck/Emma_Persona.jpg"
 import Max from "../assets/images/blck/Max_Persona.jpg"
+import UXEmma from "../assets/images/blck/CustomerJourney_Emma.jpg"
+import UXMax from "../assets/images/blck/CustomerJourney_Max.jpg"
 
 function BLCK() {
   return (
@@ -58,6 +60,15 @@ function BLCK() {
         <div className="flex gap-8 my-4">
           <img src={Emma} alt="Persona Emma Müller" className="w-1/2 rounded-2xl" />
           <img src={Max} alt="Persona Max Schmidt" className="w-1/2 rounded-2xl"  />
+        </div>
+        <p>In the defining process, we envisioned scenarios where users encounter challenges and how they discover our 
+          product. Employing UX Maps and Customer Journey Maps, we meticulously charted user experiences to grasp the problem 
+          comprehensively. These visual aids provided invaluable insights into user interactions and highlighted opportunities 
+          for improvement. By understanding user journeys, we honed our understanding of user needs and devised strategies 
+          to enhance their experience with our product. </p>
+        <div className="flex gap-8 mt-4">
+          <img src={UXEmma} alt="Customer Journey Map Emma" className="w-1/2 rounded-2xl" />
+          <img src={UXMax} alt="Customer Journey Map Max" className="w-1/2 rounded-2xl"  />
         </div>
       </div>
     </div>
