@@ -4,6 +4,7 @@ import Home from './pages/Home.tsx'
 import Navbar from './components/Navbar'
 import Work from './pages/Work.tsx'
 import BLCK from './pages/BLCK.tsx'
+import Zoetrope from './pages/Zoetrope.tsx'
 
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/work' element={<Work />}/>
           <Route path='/projects/blck' element={<BLCK />}/>
+          <Route path='/projects/zoetrope' element={<Zoetrope />}/>
         </Routes>
       </BrowserRouter>
       <footer className='m-8'>
