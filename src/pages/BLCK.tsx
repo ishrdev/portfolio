@@ -5,6 +5,12 @@ import Emma from "../assets/images/blck/Emma_Persona.jpg"
 import Max from "../assets/images/blck/Max_Persona.jpg"
 import UXEmma from "../assets/images/blck/CustomerJourney_Emma.jpg"
 import UXMax from "../assets/images/blck/CustomerJourney_Max.jpg"
+import Ideas from "../assets/images/blck/ideas.jpg"
+import LoFiIdea1 from "../assets/images/blck/lofi_idea_1.jpg"
+import LoFiIdea2 from "../assets/images/blck/lofi_idea_2.jpg"
+import LoFiIdea3 from "../assets/images/blck/lofi_idea_3-1.png"
+import LoFiIdea4 from "../assets/images/blck/lofi_idea_3-2.png"
+import LoFiDecision from "../assets/images/blck/lofi_decision_review.jpg"
 
 function BLCK() {
   return (
@@ -13,12 +19,12 @@ function BLCK() {
       <img src={blckBanner} alt="BLCK Mockup Shot" className="w-full h-full object-cover" />
       <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent" />
     </div>
-    <div className="flex flex-col w-full justify-center items-start p-8 gap-16 text-left">
+    <div className="flex flex-col w-full justify-center items-start px-32 py-8 gap-16 text-left">
       <div className="title text-4xl">BLCK</div>
       <div className="flex w-full justify-between gap-8">
         <div className="flex flex-col w-2/3 gap-4">
           <p className="title">Used Technologies</p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap gap-8">
             <TechTag name="Figma" icon={logos.figma}/>
             <TechTag name='Adobe Illustrator' icon={logos.illustrator}/>
             <TechTag name='Adobe Photoshop' icon={logos.photoshop}/>
@@ -69,6 +75,26 @@ function BLCK() {
         <div className="flex gap-8 mt-4">
           <img src={UXEmma} alt="Customer Journey Map Emma" className="w-1/2 rounded-2xl" />
           <img src={UXMax} alt="Customer Journey Map Max" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Ideation</h2>
+        <p>During our ideation process, we gathered to brainstorm app functionalities collectively. Following that, we 
+          individually sketched several screens, subsequently sharing and presenting our designs to one another. 
+          This intensive session allowed us to generate a plethora of ideas. Subsequently, we meticulously assessed and 
+          narrowed down our options, ensuring that only the most viable and innovative concepts proceeded to the next 
+          phase of development.</p>
+        <div className="flex gap-8 my-4">
+          <img src={Ideas} alt="Idea Notes" className="w-1/2 rounded-2xl"  />
+          <img src={LoFiDecision} alt="Screen Idea Review Notes" className="w-1/2 rounded-2xl"  />
+        </div>
+        <div className="flex gap-8 my-4">
+          <img src={LoFiIdea1} alt="LoFi Idea 1" className="w-1/2 rounded-2xl"  />
+          <img src={LoFiIdea2} alt="LoFi Idea 2" className="w-1/2 rounded-2xl"  />
+        </div>
+        <div className="flex gap-8 my-4">
+          <img src={LoFiIdea3} alt="Lofi Idea 3_1" className="w-1/2 rounded-2xl"  />
+          <img src={LoFiIdea4} alt="Lofi Idea 3_2" className="w-1/2 rounded-2xl"  />
         </div>
       </div>
     </div>
