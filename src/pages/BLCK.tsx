@@ -11,6 +11,9 @@ import LoFiIdea2 from "../assets/images/blck/lofi_idea_2.jpg"
 import LoFiIdea3 from "../assets/images/blck/lofi_idea_3-1.png"
 import LoFiIdea4 from "../assets/images/blck/lofi_idea_3-2.png"
 import LoFiDecision from "../assets/images/blck/lofi_decision_review.jpg"
+import LofiFinal from "../assets/images/blck/wireframes_final.png"
+import BLCKDemo from "../assets/images/blck/blck_demo.gif"
+import HiFiFinal from "../assets/images/blck/final_hifi_proto.png"
 
 function BLCK() {
   return (
@@ -95,6 +98,24 @@ function BLCK() {
         <div className="flex gap-8 my-4">
           <img src={LoFiIdea3} alt="Lofi Idea 3_1" className="w-1/2 rounded-2xl"  />
           <img src={LoFiIdea4} alt="Lofi Idea 3_2" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Our Solution</h2>
+        <div className="flex gap-8">
+          <p className="">After carefully considering the needs of our users and our conceptual ideas, we crafted a lo-fi prototype by 
+          consolidating and enhancing the ideas we had developed thus far. This iterative process allowed us to refine 
+          our ideas and incorporate user feedback efficiently. By creating a low-fidelity prototype, we could swiftly 
+          iterate and test various design elements, ensuring that our final product would align closely with user 
+          expectations and preferences.</p>
+        </div>        
+        <div className="flex flex-col gap-4 my-4">
+          <img src={LofiFinal} alt="Final LoFi Prototype" className="rounded-2xl"  />
+          <div className="flex gap-8">
+            <img src={BLCKDemo} alt="BLCK Demo" className="w-1/3 rounded-2xl"  />
+            <img src={HiFiFinal} alt="Final HiFi Prototype" className="w-2/3 rounded-2xl"  />
+          </div>
+          
         </div>
       </div>
     </div>
