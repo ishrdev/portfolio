@@ -44,6 +44,10 @@ function Onirique() {
           </div>
         </div>
       </div>
+      <p>I conceptualized a business idea for a university project centered on an imaginary underwater world. 
+        Designing a website for my luxury hotel brand, Onirique (meaning "dreamlike" in French), I aimed to evoke familiarity
+        amidst opulence. Crafting an experience that harmonized with the fantastical underwater landscape, I envisioned
+        a haven where guests could indulge in luxury while feeling right at home.</p>
     </div>
     </>
   )
