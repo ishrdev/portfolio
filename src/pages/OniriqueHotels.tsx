@@ -5,6 +5,8 @@ import logoIdeas from "../assets/images/onirique/logo_ideas.jpg"
 import mainPage from "../assets/images/onirique/main_page.jpg"
 import roomsPage from "../assets/images/onirique/rooms_page.jpg"
 import bookingPage from "../assets/images/onirique/booking_page.jpg"
+import style from "../assets/images/onirique/style_guide.png"
+import mockupDemo from "../assets/images/onirique/onirique_gif.gif"
 
 function Onirique() {
   return (
@@ -64,6 +66,16 @@ function Onirique() {
         <div className="flex gap-8 my-4">
           <img src={roomsPage} alt="Hotel Rooms Overview Page" className="w-1/2 rounded-2xl" />
           <img src={bookingPage} alt="Hotel Booking Process Page" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Design</h2>
+        <p>For the design phase, I curated a color palette evoking luxury and cleanliness. I aimed for a cohesive visual
+          identity, which I achieved through selecting fonts that embodied these qualities. Additionally, I utilized
+          interior design software to personally craft each room, leveraging existing knowledge.</p>
+        <div className="flex flex-col gap-8 my-4">
+          <img src={style} alt="Style Guide" className="rounded-2xl"  />
+          <img src={mockupDemo} alt="Onirique Hotels Demo" className=" rounded-2xl"  />
         </div>
       </div>
     </div>
