@@ -6,6 +6,7 @@ import Work from './pages/Work.tsx'
 import BLCK from './pages/BLCK.tsx'
 import Zoetrope from './pages/Zoetrope.tsx'
 import Onirique from './pages/OniriqueHotels.tsx'
+import Passport from './pages/Passport.tsx'
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects/blck' element={<BLCK />}/>
           <Route path='/projects/zoetrope' element={<Zoetrope />}/>
           <Route path='/projects/onirique-hotels' element={<Onirique />}/>
+          <Route path='/projects/fictive-passport' element={<Passport />}/>
         </Routes>
       </BrowserRouter>
       <footer className='m-8'>
