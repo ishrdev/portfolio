@@ -1,5 +1,9 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
+import Cover from "../assets/images/passport/passport_cover.png"
+import Intro from "../assets/images/passport/passport_introduction.png"
+import ID from "../assets/images/passport/passport_id.png"
+import Visa from "../assets/images/passport/passport_visa.png"
 
 
 function Passport() {
@@ -41,6 +45,20 @@ function Passport() {
       <p>For my university assignment, I crafted a passport tailored to an imaginary underwater realm. This project 
         challenged me to blend creativity with practicality, envisioning a document reflective of the unique environment
         it represents.</p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Design</h2>
+        <p>Utilizing Adobe Photoshop and Illustrator, I transformed myself into an underwater
+          creature for this project. This marked my first extensive foray into self-editing. Though initially challenging,
+          I gradually mastered the techniques. For privacy, I omitted my face from the edited photo displayed below.</p>
+        <div className="flex gap-8 my-4">
+          <img src={Cover} alt="Passport Cover" className="w-1/2 rounded-2xl" />
+          <img src={Intro} alt="Passport Introduction Text" className="w-1/2 rounded-2xl" />
+        </div>
+        <div className="flex gap-8 my-4">
+          <img src={ID} alt="Passport ID Page" className="w-1/2 rounded-2xl" />
+          <img src={Visa} alt="Passport Visa Stamping" className="w-1/2 rounded-2xl" />
+        </div>
+      </div>
     </div>
     </>
   )
