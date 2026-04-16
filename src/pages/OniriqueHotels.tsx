@@ -1,6 +1,10 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
 import oniriqueBanner from "../assets/images/onirique/onirique_banner.png"
+import logoIdeas from "../assets/images/onirique/logo_ideas.jpg"
+import mainPage from "../assets/images/onirique/main_page.jpg"
+import roomsPage from "../assets/images/onirique/rooms_page.jpg"
+import bookingPage from "../assets/images/onirique/booking_page.jpg"
 
 function Onirique() {
   return (
@@ -48,6 +52,20 @@ function Onirique() {
         Designing a website for my luxury hotel brand, Onirique (meaning "dreamlike" in French), I aimed to evoke familiarity
         amidst opulence. Crafting an experience that harmonized with the fantastical underwater landscape, I envisioned
         a haven where guests could indulge in luxury while feeling right at home.</p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Ideation</h2>
+        <p>Prior to website development, I focused on crafting a logo that resonated with the hotel brand.
+          Exploring multiple concepts, I selected one that harmonized seamlessly with the hotel's name. 
+          Subsequently, I outlined wireframes for key website pages, ensuring a cohesive and user-friendly layout.</p>
+        <div className="flex gap-8 my-4">
+          <img src={logoIdeas} alt="Logo Ideation Process" className="w-1/2 rounded-2xl" />
+          <img src={mainPage} alt="Hotel Main Page" className="w-1/2 rounded-2xl"  />
+        </div>
+        <div className="flex gap-8 my-4">
+          <img src={roomsPage} alt="Hotel Rooms Overview Page" className="w-1/2 rounded-2xl" />
+          <img src={bookingPage} alt="Hotel Booking Process Page" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
     </div>
     </>
   )
