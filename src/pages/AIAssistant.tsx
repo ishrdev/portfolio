@@ -2,6 +2,10 @@ import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
 import aiBanner from "../assets/images/aiAssistant/ai_banner.png"
 import Workflow from "../assets/images/aiAssistant/workflow.svg"
+import LeereKonvoLofi from "../assets/images/aiAssistant/leere_konvo_lofi.png"
+import KonvoPDFLofi from "../assets/images/aiAssistant/konvo_mit_pdf_lofi.png"
+import LofiFinal from "../assets/images/aiAssistant/lofi_final.png"
+import HifiFinal from "../assets/images/aiAssistant/design_final.png"
 
 function AIAssistant() {
   return (
@@ -69,6 +73,25 @@ function AIAssistant() {
         <h2 className="title">Workflow</h2>
         <div className="flex justify-center">
           <img src={Workflow} alt="Workflow" className="rounded-2xl" />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Design</h2>
+        <div className="flex gap-8">
+          <p>As this project extends an existing web application for a financial software company, I maintained the 
+            established brand identity and color palette to ensure a consistent and familiar user experience. This decision 
+            helps build trust and prevents confusion when introducing new functionality within the platform. I began by 
+            translating my ideas into low-fidelity wireframes, drawing inspiration from the existing manual form to reuse 
+            familiar patterns and create an intuitive interface.
+          </p>
+        </div>        
+        <div className="flex gap-4 my-4">
+          <img src={LeereKonvoLofi} alt="Empty Conversation Design Idea" className="w-1/2 rounded-2xl"  />
+          <img src={KonvoPDFLofi} alt="Conversation Design Idea" className="w-1/2 rounded-2xl"  />
+        </div>
+        <div className="flex gap-4 my-4">
+          <img src={LofiFinal} alt="Final LoFi Design" className="w-1/2 rounded-2xl"  />
+          <img src={HifiFinal} alt="Final HiFI Design Prototype" className="w-1/2 rounded-2xl"  />
         </div>
       </div>
     </div>
