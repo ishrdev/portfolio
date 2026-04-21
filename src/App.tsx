@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.tsx'
 import Navbar from './components/Navbar'
 import Work from './pages/Work.tsx'
+import AIAssistant from './pages/AIAssistant.tsx'
 import BLCK from './pages/BLCK.tsx'
 import Zoetrope from './pages/Zoetrope.tsx'
 import Onirique from './pages/OniriqueHotels.tsx'
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/work' element={<Work />}/>
+          <Route path='/projects/ai-chatbot' element={<AIAssistant />}/>
           <Route path='/projects/blck' element={<BLCK />}/>
           <Route path='/projects/zoetrope' element={<Zoetrope />}/>
           <Route path='/projects/onirique-hotels' element={<Onirique />}/>
