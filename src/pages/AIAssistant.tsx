@@ -6,6 +6,11 @@ import LeereKonvoLofi from "../assets/images/aiAssistant/leere_konvo_lofi.png"
 import KonvoPDFLofi from "../assets/images/aiAssistant/konvo_mit_pdf_lofi.png"
 import LofiFinal from "../assets/images/aiAssistant/lofi_final.png"
 import HifiFinal from "../assets/images/aiAssistant/design_final.png"
+import Invoice from "../assets/images/aiAssistant/rechnung_final.png"
+import AddCustomer from "../assets/images/aiAssistant/kunde_hinzufuegen.png"
+import CustomerDB from "../assets/images/aiAssistant/neukunde_mongodb.png"
+import AddArticle from "../assets/images/aiAssistant/artikel_hinzufuegen.png"
+import ArticleDB from "../assets/images/aiAssistant/neuartikel_mongodb.png"
 
 function AIAssistant() {
   return (
@@ -92,6 +97,43 @@ function AIAssistant() {
         <div className="flex gap-4 my-4">
           <img src={LofiFinal} alt="Final LoFi Design" className="w-1/2 rounded-2xl"  />
           <img src={HifiFinal} alt="Final HiFI Design Prototype" className="w-1/2 rounded-2xl"  />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Implementation</h2>
+        <p>The backend of the application is built with Python and LangChain, leveraging a Retrieval-Augmented Generation 
+          (RAG) approach to improve the accuracy and reliability of LLM outputs. User input is analyzed by the model to 
+          extract key information such as customer, item, and quantity, which is then structured into a JSON format.
+          This data is enriched through database retrieval, including fuzzy matching for item identification, and 
+          validated using Pydantic before being used to dynamically populate the invoice form in the frontend. If referenced 
+          data is missing, the system guides users through an interactive flow to add new entries while ensuring input 
+          accuracy and preventing common LLM issues such as hallucinations.
+        </p>        
+        <div className="flex flex-col gap-8 my-4">
+          <div className="text-center">
+            <img src={Invoice} alt="Generated Invoice Example" className="rounded-2xl mb-4" />
+            <p>Generating an Invoice</p>
+          </div>
+          <div className="flex gap-6">
+            <div className="w-4/5 text-center">
+              <img src={AddCustomer} alt="Add New Customer" className="rounded-2xl mb-4" />
+              <p>Adding New Customer Entry</p>
+            </div>
+            <div className="text-center">
+              <img src={CustomerDB} alt="New Customer Entry in MongoDB" className="rounded-2xl mb-4" />
+              <p>New Customer Entry in MongoDB</p>
+            </div>
+          </div>
+          <div className="flex gap-6">
+            <div className="w-4/5 text-center">
+              <img src={AddArticle} alt="Add New Article" className="rounded-2xl mb-4" />
+              <p>Adding New Article Entry</p>
+            </div>
+            <div className="text-center">
+              <img src={ArticleDB} alt="New Article Entry in MongoDB" className="rounded-2xl mb-4" />
+              <p>New Customer Entry in MongoDB</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
