@@ -54,6 +54,16 @@ function AIAssistant() {
         automates invoice creation by extracting user input and generating structured data to dynamically populate forms. 
         The project was conducted in collaboration with a German financial software company.
       </p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Project Goal</h2>
+        <p>Clients of the company currently have to manually fill out multiple fields to create invoices, making the process
+          repetitive and time-consuming. To improve efficiency, the goal was to develop an AI-powered extension for the 
+          existing web application that automates this workflow. The solution introduces a chatbot interface that processes 
+          user input and automatically populates the invoice form using relevant data from the company's database, 
+          reducing a multi-step process to just one or two interactions. To ensure data privacy, a local LLM was used 
+          instead of external APIs, keeping sensitive customer data within the company's infrastructure. 
+        </p>
+      </div>
     </div>
     </>
   )
