@@ -1,6 +1,7 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
 import aiBanner from "../assets/images/aiAssistant/ai_banner.png"
+import Workflow from "../assets/images/aiAssistant/workflow.svg"
 
 function AIAssistant() {
   return (
@@ -63,6 +64,12 @@ function AIAssistant() {
           reducing a multi-step process to just one or two interactions. To ensure data privacy, a local LLM was used 
           instead of external APIs, keeping sensitive customer data within the company's infrastructure. 
         </p>
+      </div>
+      <div className="flex flex-col gap-4 w-full">
+        <h2 className="title">Workflow</h2>
+        <div className="flex justify-center">
+          <img src={Workflow} alt="Workflow" className="rounded-2xl" />
+        </div>
       </div>
     </div>
     </>
