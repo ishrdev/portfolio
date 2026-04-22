@@ -41,6 +41,14 @@ function FairGig() {
         focused on digital product design and user experience. The project explored how gig workers interact with data, 
         income uncertainty, and platform structures, combining research, concept development, and interface design.
       </p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title">Project Goal</h2>
+        <p>FairGig is a mobile application designed to bring transparency to the gig economy. It enables users to track 
+          their earnings and expenses, compare their income anonymously with peers, and gain insights through data-driven 
+          forecasts. Additionally, the app integrates community features to foster exchange, support, and collective 
+          awareness among platform workers. 
+        </p>
+      </div>
     </div>
     </>
   )
