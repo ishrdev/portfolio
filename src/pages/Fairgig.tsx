@@ -1,5 +1,6 @@
 import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
+import InfoArch from "../assets/images/fairgig/informationsarchitektur.png"
 
 function FairGig() {
   return (
@@ -48,6 +49,12 @@ function FairGig() {
           forecasts. Additionally, the app integrates community features to foster exchange, support, and collective 
           awareness among platform workers. 
         </p>
+      </div>
+      <div className="flex flex-col gap-4 w-full">
+        <h2 className="title">Information Architecture</h2>
+        <div className="flex justify-center">
+          <img src={InfoArch} alt="Workflow" className="rounded-2xl" />
+        </div>
       </div>
     </div>
     </>
