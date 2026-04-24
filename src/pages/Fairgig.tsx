@@ -6,6 +6,7 @@ import LoFiDesign from "../assets/images/fairgig/lofi_wireframes.png"
 import Style from "../assets/images/fairgig/visual_system.png"
 import Components from "../assets/images/fairgig/ui_components.png"
 import HiFiFinal from "../assets/images/fairgig/design.png"
+import FigmaEmbed from "../components/FigmaEmbed"
 
 function FairGig() {
   return (
@@ -91,6 +92,13 @@ function FairGig() {
           </div>
           <img src={HiFiFinal} alt="Final HiFi Prototype" className="rounded-2xl"/>
         </div>
+      </div>
+      <div className="flex flex-col gap-4 w-full">
+        <div className="title text-lg">Clickable Prototype</div>
+        <FigmaEmbed
+        src="https://embed.figma.com/proto/y2AVIbu6e7DNJbO9Kfhx0P/FairGig?node-id=163-2672&p=f&viewport=-8%2C-990%2C0.32&scaling=scale-down&content-scaling=fixed&starting-point-node-id=163%3A2672&page-id=0%3A1&embed-host=share&footer=false"
+        title="FairGig prototype"
+        />
       </div>
     </div>
     </>
