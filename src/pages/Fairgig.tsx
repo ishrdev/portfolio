@@ -2,6 +2,10 @@ import TechTag from "../components/TechTag"
 import logos from "../assets/logos"
 import fairgigBanner from "../assets/images/fairgig/fairgig_banner.png"
 import InfoArch from "../assets/images/fairgig/informationsarchitektur.png"
+import LoFiDesign from "../assets/images/fairgig/lofi_wireframes.png"
+import Style from "../assets/images/fairgig/visual_system.png"
+import Components from "../assets/images/fairgig/ui_components.png"
+import HiFiFinal from "../assets/images/fairgig/design.png"
 
 function FairGig() {
   return (
@@ -58,7 +62,34 @@ function FairGig() {
       <div className="flex flex-col gap-4 w-full">
         <h2 className="title text-lg">Information Architecture</h2>
         <div className="flex justify-center">
-          <img src={InfoArch} alt="Workflow" className="rounded-2xl" />
+          <img src={InfoArch} alt="Information Architecture" className="rounded-2xl"/>
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title text-lg">Design</h2>
+        <div className="flex gap-8">
+          <p>The design of FairGig follows a clean and modern aesthetic, with a strong focus on clarity, accessibility, 
+            and data transparency. The interface is intentionally minimal, allowing users to quickly understand their 
+            financial situation without unnecessary complexity.
+            A structured layout combined with soft color gradients helps guide attention toward key insights, such as 
+            income comparisons and performance indicators. Visual elements like charts and highlighted metrics are designed 
+            to make abstract data tangible and easy to interpret at a glance. The use of subtle contrasts and a limited color 
+            palette creates a calm and trustworthy atmosphere, reinforcing the app's goal of providing reliable and transparent 
+            information. Interactive elements are clearly defined and intuitive, ensuring a smooth user experience even for 
+            users with varying levels of digital familiarity. Overall, the design aims to balance functionality and 
+            simplicity while supporting users in making informed decisions about their work and income.
+          </p>
+        </div>
+        <div className="flex flex-col gap-16 my-4 items-center">
+          <img src={LoFiDesign} alt="Lofi Wireframes" className="rounded-2xl"/>
+          <div>
+            <p className="title mb-8">Visual System Library</p>
+            <div className="flex gap-16">
+              <img src={Style} alt="Visual System Library" className="w-1/2 rounded-2xl"/>
+              <img src={Components} alt="UI Components" className="w-1/2 rounded-2xl"/>
+            </div>
+          </div>
+          <img src={HiFiFinal} alt="Final HiFi Prototype" className="rounded-2xl"/>
         </div>
       </div>
     </div>
