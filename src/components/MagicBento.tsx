@@ -1,5 +1,9 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
+import { useNavigate } from 'react-router-dom'
+import fairgig from '../assets/images/fairgig/fairgig_cover.png'
+import aiAssistant from '../assets/images/aiAssistant/ai_assistant_cover.png'
+import blck from '../assets/images/blck/blck_mockup.png'
 
 export interface BentoCardProps {
   color?: string;
@@ -7,6 +11,7 @@ export interface BentoCardProps {
   description?: string;
   label?: string;
   image?: string,
+  route?: string,
   textAutoHide?: boolean;
   disableAnimations?: boolean;
 }
@@ -33,27 +38,34 @@ const MOBILE_BREAKPOINT = 768;
 const cardData: BentoCardProps[] = [
   {
     color: '#060010',
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Project 1'
+    title: 'Gig Economy Pay Analysis App',
+    description: 'Tracking and comparing income based on anonymous data',
+    label: 'FairGig',
+    route: '/projects/fairgig',
+    image: fairgig
   },
   {
     color: '#060010',
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Project 2'
-  },
-  {
-    color: '#060010',
-    title: 'Collaboration',
-    description: 'Work together seamlessly 3',
-    label: 'FairGig'
+    title: 'Personal Website',
+    description: 'Showcasing my work and skills',
+    label: 'Portfolio',
+    route: '/projects/portfolio',
   },
   {
     color: '#060010',
     title: 'Smart Blinds App',
-    description: '4',
-    label: 'BLCK'
+    description: 'Blind system app',
+    label: 'BLCK',
+    route: '/projects/blck',
+    image: blck
+  },
+  {
+    color: '#060010',
+    title: 'AI Chatbot for Automated Completion of an Invoice Form',
+    description: 'Generating invoices on RAG-based data using a local LLM',
+    label: 'AI Invoice Chatbot',
+    route: '/projects/ai-chatbot',
+    image: aiAssistant
   },
 ];
 
@@ -101,6 +113,7 @@ const ParticleCard: React.FC<{
   enableTilt?: boolean;
   clickEffect?: boolean;
   enableMagnetism?: boolean;
+  onClick?: () => void;
 }> = ({
   children,
   className = '',
@@ -330,6 +343,7 @@ const ParticleCard: React.FC<{
   return (
     <div
       ref={cardRef}
+      onClick={onClick}
       className={`${className} relative overflow-hidden`}
       style={{ ...style, position: 'relative', overflow: 'hidden' }}
     >
@@ -520,6 +534,8 @@ const MagicBento: React.FC<BentoProps> = ({
   const gridRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
   const shouldDisableAnimations = disableAnimations || isMobile;
+  
+const navigate = useNavigate()
 
   return (
     <>
@@ -665,7 +681,7 @@ const MagicBento: React.FC<BentoProps> = ({
       <BentoCardGrid gridRef={gridRef}>
         <div className="card-responsive grid gap-3 max-w-250 h-screen">
           {cardData.map((card, index) => {
-            const baseClassName = `card flex flex-col justify-between relative min-h-[300px] w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
+            const baseClassName = `card flex flex-col justify-between relative min-h-[300px] w-full p-5 rounded-[20px] cursor-pointer border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''
             }`;
 
@@ -686,8 +702,9 @@ const MagicBento: React.FC<BentoProps> = ({
               return (
                 <ParticleCard
                   key={index}
-                  className={baseClassName}
+                  className={`${baseClassName}`}
                   style={cardStyle}
+                  onClick={() => card.route && navigate(card.route)}
                   disableAnimations={shouldDisableAnimations}
                   particleCount={particleCount}
                   glowColor={glowColor}
@@ -717,6 +734,7 @@ const MagicBento: React.FC<BentoProps> = ({
                 key={index}
                 className={baseClassName}
                 style={cardStyle}
+                onClick={() => card.route && navigate(card.route)}
                 ref={el => {
                   if (!el) return;
 
