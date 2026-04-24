@@ -2,6 +2,7 @@ import DarkVeil from '../assets/DarkVeil'
 import MagicBento from '../components/MagicBento'
 import logos from '../assets/logos.tsx'
 import Separator from '../components/Seperator.tsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import '../App.css'
 
@@ -78,6 +79,19 @@ export default function Home() {
                 <img src={logos.github} className="logo" alt="Github logo" />
               </a>
             </div>
+          </div>
+          <div className='-my-50 w-full'>
+            <FontAwesomeIcon 
+            icon={faAnglesDown}
+            size="2xl"
+            beatFade
+            className='slow-beat-fade cursor-pointer'
+            onClick={() => {
+              document.getElementById("work")?.scrollIntoView({
+                behavior: "smooth"
+              });
+            }}
+            />
           </div>
         </div>
       </section>
