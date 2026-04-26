@@ -495,7 +495,7 @@ const BentoCardGrid: React.FC<{
   gridRef?: React.RefObject<HTMLDivElement | null>;
 }> = ({ children, gridRef }) => (
   <div
-    className="bento-section grid gap-2 w-250 p-3 select-none relative"
+    className="bento-section grid gap-2 w-full select-none relative"
     style={{ fontSize: 'clamp(1rem, 0.9rem + 0.5vw, 1.5rem)' }}
     ref={gridRef}
   >
@@ -679,7 +679,7 @@ const navigate = useNavigate()
       )}
 
       <BentoCardGrid gridRef={gridRef}>
-        <div className="card-responsive grid gap-3 max-w-250 h-screen">
+        <div className="card-responsive grid gap-3 w-full h-auto lg:h-screen">
           {cardData.map((card, index) => {
             const baseClassName = `card flex flex-col justify-between relative min-h-[300px] w-full p-5 rounded-[20px] cursor-pointer border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''
@@ -715,7 +715,7 @@ const navigate = useNavigate()
                   <div className="card__header flex justify-between gap-3 relative text-white">
                     <span className="card__label text-base">{card.label}</span>
                   </div>
-                  <div className="card__content flex flex-col relative text-white">
+                  <div className="card__content relative z-10 flex flex-col text-white  bg-black/25 backdrop-blur-sm border border-white/5 p-2 rounded-lg shadow-xl">
                     <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                       {card.title}
                     </h3>
@@ -846,9 +846,9 @@ const navigate = useNavigate()
                 }}
               >
                 <div className="card__header flex justify-between gap-3 relative text-white">
-                  <span className="card__label text-base">{card.label}</span>
+                  <span className="card__label text-base bg-black/20 backdrop-blur-sm border border-white/5 p-2 rounded-lg shadow-xl">{card.label}</span>
                 </div>
-                <div className="card__content flex flex-col relative text-white">
+                <div className="card__content relative z-10 flex flex-col text-white bg-black/25 backdrop-blur-sm border border-white/5 p-2 rounded-lg shadow-xl">
                   <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                     {card.title}
                   </h3>
