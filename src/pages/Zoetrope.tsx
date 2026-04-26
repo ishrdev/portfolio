@@ -9,6 +9,7 @@ function Zoetrope() {
   return (
     <>
     <div className=" relative h-[50%] w-full overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-4 bg-linear-to-t from-transparent to-black" />
       <img src={ZoetropeGIF} alt="Zoetrope Animation GIF" className="w-full h-full object-cover" />
       <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent" />
     </div>
