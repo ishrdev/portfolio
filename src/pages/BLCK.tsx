@@ -14,6 +14,7 @@ import LoFiDecision from "../assets/images/blck/lofi_decision_review.jpg"
 import LofiFinal from "../assets/images/blck/wireframes_final.png"
 import BLCKDemo from "../assets/images/blck/blck_demo.gif"
 import HiFiFinal from "../assets/images/blck/final_hifi_proto.png"
+import FigmaEmbed from "../components/FigmaEmbed"
 
 function BLCK() {
   return (
@@ -115,8 +116,14 @@ function BLCK() {
             <img src={BLCKDemo} alt="BLCK Demo" className="w-1/3 rounded-2xl"  />
             <img src={HiFiFinal} alt="Final HiFi Prototype" className="w-2/3 rounded-2xl"  />
           </div>
-          
         </div>
+        <div className="flex flex-col gap-4 w-full">
+          <div className="title text-lg">Clickable Prototype</div>
+          <FigmaEmbed
+          src="https://embed.figma.com/proto/KbyEZriZDw4d2S7FnuL10U/Wireframes?node-id=1226-527&p=f&viewport=-272%2C-2367%2C0.43&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1226%3A619&page-id=1226%3A139&embed-host=share&footer=false"
+          title="BLCK prototype"
+        />
+      </div>
       </div>
     </div>
     </>
