@@ -133,7 +133,6 @@ const Card: React.FC<CardProps> = ({
       
       if (enableParticles) animateParticles();
       
-      // Levitation Start: Hebt die Karte um 10px an
       if (enableLevitation) {
         gsap.to(element, { y: -10, duration: 0.4, ease: 'power2.out' });
       }
@@ -145,7 +144,6 @@ const Card: React.FC<CardProps> = ({
       
       if (enableParticles) clearAllParticles();
       
-      // Zurücksetzen von Levitation und Magnetismus auf die Ursprungsposition
       gsap.to(element, { x: 0, y: 0, duration: 0.4, ease: 'power2.out' });
     };
 
@@ -154,7 +152,7 @@ const Card: React.FC<CardProps> = ({
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       
-      // Update Glow Position
+      // Update glow position
       element.style.setProperty('--glow-x', `${x}px`);
       element.style.setProperty('--glow-y', `${y}px`);
 
@@ -163,11 +161,10 @@ const Card: React.FC<CardProps> = ({
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
 
-      // Magnetismus-Berechnung
+      // Calculate magnetism
       const magnetX = (x - centerX) * 0.05;
       const magnetY = (y - centerY) * 0.05;
       
-      // Wenn Levitation aktiv ist, kombinieren wir den Magnetismus mit dem Schwebe-Offset (-10)
       const baseLevitation = enableLevitation ? -10 : 0;
 
       gsap.to(element, { 
@@ -266,7 +263,6 @@ const Card: React.FC<CardProps> = ({
             z-index: 1;
           }
           
-          /* Etwas weicherer und tieferer Schatten für den perfekten Schwebe-Look */
           .project-card:hover {
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 40px rgba(var(--glow-color-rgb), 0.15);
           }

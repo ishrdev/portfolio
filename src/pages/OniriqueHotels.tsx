@@ -56,7 +56,7 @@ function Onirique() {
         amidst opulence. Crafting an experience that harmonized with the fantastical underwater landscape, I envisioned
         a haven where guests could indulge in luxury while feeling right at home.</p>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Ideation</h2>
+        <h2 className="title text-lg">Ideation</h2>
         <p>Prior to website development, I focused on crafting a logo that resonated with the hotel brand.
           Exploring multiple concepts, I selected one that harmonized seamlessly with the hotel's name. 
           Subsequently, I outlined wireframes for key website pages, ensuring a cohesive and user-friendly layout.</p>
@@ -70,7 +70,7 @@ function Onirique() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Design</h2>
+        <h2 className="title text-lg">Design</h2>
         <p>For the design phase, I curated a color palette evoking luxury and cleanliness. I aimed for a cohesive visual
           identity, which I achieved through selecting fonts that embodied these qualities. Additionally, I utilized
           interior design software to personally craft each room, leveraging existing knowledge.</p>

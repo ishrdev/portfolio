@@ -21,7 +21,7 @@ function AIAssistant() {
       <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent" />
     </div>
     <div className="flex flex-col w-full justify-center items-start px-32 py-8 gap-16 text-left">
-      <div className="title text-4xl">AI Invoice Assistant</div>
+      <div className="title text-4xl">AI INVOICE ASSISTANT</div>
       <div className="flex w-full justify-between gap-8">
         <div className="flex flex-col w-2/3 gap-4">
           <p className="title">Used Technologies</p>
@@ -66,7 +66,7 @@ function AIAssistant() {
         The project was conducted in collaboration with a German financial software company.
       </p>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Project Goal</h2>
+        <h2 className="title text-lg">Project Goal</h2>
         <p>Clients of the company currently have to manually fill out multiple fields to create invoices, making the process
           repetitive and time-consuming. To improve efficiency, the goal was to develop an AI-powered extension for the 
           existing web application that automates this workflow. The solution introduces a chatbot interface that processes 
@@ -76,13 +76,13 @@ function AIAssistant() {
         </p>
       </div>
       <div className="flex flex-col gap-4 w-full">
-        <h2 className="title">Workflow</h2>
+        <h2 className="title text-lg">Workflow</h2>
         <div className="flex justify-center">
           <img src={Workflow} alt="Workflow" className="rounded-2xl" />
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Design</h2>
+        <h2 className="title text-lg">Design</h2>
         <div className="flex gap-8">
           <p>As this project extends an existing web application for a financial software company, I maintained the 
             established brand identity and color palette to ensure a consistent and familiar user experience. This decision 
@@ -101,7 +101,7 @@ function AIAssistant() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Implementation</h2>
+        <h2 className="title text-lg">Implementation</h2>
         <p>The backend of the application is built with Python and LangChain, leveraging a Retrieval-Augmented Generation 
           (RAG) approach to improve the accuracy and reliability of LLM outputs. User input is analyzed by the model to 
           extract key information such as customer, item, and quantity, which is then structured into a JSON format.

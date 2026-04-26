@@ -46,7 +46,7 @@ function Passport() {
         challenged me to blend creativity with practicality, envisioning a document reflective of the unique environment
         it represents.</p>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Design</h2>
+        <h2 className="title text-lg">Design</h2>
         <p>Utilizing Adobe Photoshop and Illustrator, I transformed myself into an underwater
           creature for this project. This marked my first extensive foray into self-editing. Though initially challenging,
           I gradually mastered the techniques. For privacy, I omitted my face from the edited photo displayed below.</p>

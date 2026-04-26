@@ -63,7 +63,7 @@ function BLCK() {
         involving case studies, intensive research, and a UX interview to create an intuitive and user-friendly interface 
         that would revolutionize user interaction with smart blinds.</p>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Empathizing & Defining</h2>
+        <h2 className="title text-lg">Empathizing & Defining</h2>
         <p>Empathy is pivotal in UX design, fostering a deep understanding of users' needs, emotions, and behaviors. 
           By empathizing, we gain insights vital for crafting meaningful experiences. It allows stepping into users' shoes, 
           identifying pain points, and designing solutions that resonate. For this phase of the "Design-Thinking-Process" 
@@ -83,7 +83,7 @@ function BLCK() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Ideation</h2>
+        <h2 className="title text-lg">Ideation</h2>
         <p>During our ideation process, we gathered to brainstorm app functionalities collectively. Following that, we 
           individually sketched several screens, subsequently sharing and presenting our designs to one another. 
           This intensive session allowed us to generate a plethora of ideas. Subsequently, we meticulously assessed and 
@@ -103,7 +103,7 @@ function BLCK() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Our Solution</h2>
+        <h2 className="title text-lg">Our Solution</h2>
         <div className="flex gap-8">
           <p className="">After carefully considering the needs of our users and our conceptual ideas, we crafted a lo-fi prototype by 
           consolidating and enhancing the ideas we had developed thus far. This iterative process allowed us to refine 

@@ -51,7 +51,7 @@ function Zoetrope() {
         When the zoetrope rotates, the animation loops, bringing the illusion of motion to life within this classic 
         animation device.</p>
       <div className="flex flex-col gap-4">
-        <h2 className="title">Modelling</h2>
+        <h2 className="title text-lg">Modelling</h2>
         <div className="flex gap-8">
           <p className="text-balance">For the project, we were tasked to use Maya. Independently, I constructed the zoetrope, facing challenges 
           in sourcing reference images. Later, our professor prompted us to devise a mechanical design for the mechanics
