@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home.tsx'
 import Navbar from './components/Navbar'
 import Work from './pages/Work.tsx'
@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/work' element={<Work />}/>
+          <Route path='/projects' element={<Navigate to='/work' />}/>
           <Route path='/projects/fairgig' element={<FairGig />}/>
           <Route path='/projects/ai-chatbot' element={<AIAssistant />}/>
           <Route path='/projects/blck' element={<BLCK />}/>
