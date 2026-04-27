@@ -1,21 +1,13 @@
-//import { NavLink } from "react-router-dom";
-
 const Navbar = () => {
   return (
-    <nav className="w-full sticky z-20 mx-auto flex items-center justify-between px-8 py-4">
+    <nav className="w-full sticky z-20 mx-auto flex items-center justify-between px-32 py-4">
       <div>
           <h2>Ishara Musippaththu</h2>
       </div>
       <div>
-        {/*<NavLink to="/Home">Home</NavLink>
-        <NavLink to="/About">About</NavLink>
-        <NavLink to="/Work">Work</NavLink>
-        <NavLink to="/Contact">Contact</NavLink>*/}
         <ul className="flex flex-row w-min justify-between items-center gap-8">
           <li><a href="/">Home</a></li>
-          <li>About</li>
-          <li><a href="/Work">Work</a></li>
-          <li>Contact</li>
+          <li><a href="/work">Work</a></li>
         </ul>
       </div>
     </nav>
