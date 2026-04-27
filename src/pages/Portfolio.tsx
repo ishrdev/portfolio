@@ -1,6 +1,9 @@
 import TechTag from '../components/TechTag'
 import logos from '../assets/logos'
 import PortfolioBanner from '../assets/images/portfolio/portfolio_banner.png'
+import OlderVer from '../assets/images/portfolio/older_version.gif'
+import ProjectOld from '../assets/images/portfolio/projects_old.png'
+import ProjectNew from '../assets/images/portfolio/projects_new.png'
 
 function Portfolio() {
   return (
@@ -63,6 +66,42 @@ function Portfolio() {
         <p>The goal was to create a clean, user-friendly platform to present my projects in a structured and professional 
           way, while building a scalable foundation for future improvements and expanding my frontend and UX skill set.
         </p>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title text-lg">From Previous to Current Version</h2>
+        <p>The previous version of my portfolio was built using HTML, CSS, and JavaScript with a multi-page structure. 
+          While functional, it lacked scalability, consistency, and maintainability. The new version is built with React, 
+          enabling a component-based architecture that improves code reusability, maintainability, and overall user 
+          experience.
+        </p>
+        <div className="flex flex-col lg:flex-row gap-8 mb-8">
+          <div className='flex flex-col gap-4 lg:flex'>
+            <img src={ProjectOld} alt="Project View Old Version" className="rounded-2xl"/>
+            <div className='flex items-center text-pretty gap-2'>
+              <FontAwesomeIcon icon={faCaretRight} />
+              <span>Projects were only showcased in a carousel on the main page</span>
+            </div>
+            <div className='flex items-center text-pretty gap-2'>
+              <FontAwesomeIcon icon={faCaretRight} />
+              <span>No clear overview of all available projects</span>
+            </div>
+          </div>
+          <div className='flex flex-col gap-4 text-left'>
+            <img src={ProjectNew} alt="Project View New Version" className="rounded-2xl"/>
+            <div className='flex items-center text-pretty gap-2'>
+              <FontAwesomeIcon icon={faCaretRight} />
+              <span>Dedicated page providing a complete overview of all projects</span>
+            </div>
+            <div className='flex items-center text-pretty gap-2'>
+              <FontAwesomeIcon icon={faCaretRight} />
+              <span>Highlighted selection on the home page for quick access to key work</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col text-center">
+          <img src={OlderVer} alt="Old Portfolio Version" className="rounded-2xl mb-4"/>
+            <p>Older Portfolio Version</p>
+        </div>
       </div>
     </div>
     </>
