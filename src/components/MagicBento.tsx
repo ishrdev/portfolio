@@ -29,6 +29,10 @@ export interface BentoProps {
   glowColor?: string;
   clickEffect?: boolean;
   enableMagnetism?: boolean;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+  children?: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 const DEFAULT_PARTICLE_COUNT = 12;
@@ -125,7 +129,8 @@ const ParticleCard: React.FC<{
   glowColor = DEFAULT_GLOW_COLOR,
   enableTilt = true,
   clickEffect = false,
-  enableMagnetism = false
+  enableMagnetism = false,
+  onClick
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement[]>([]);
@@ -531,7 +536,11 @@ const MagicBento: React.FC<BentoProps> = ({
   enableTilt = false,
   glowColor = DEFAULT_GLOW_COLOR,
   clickEffect = true,
-  enableMagnetism = true
+  enableMagnetism = true,
+  onClick,
+  children,
+  className,
+  style,
 }) => {
   const gridRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
@@ -681,7 +690,12 @@ const navigate = useNavigate()
       )}
 
       <BentoCardGrid gridRef={gridRef}>
-        <div className="card-responsive grid gap-3 w-full h-auto lg:h-screen">
+        <div
+          className={`card-responsive grid gap-3 w-full h-auto lg:h-screen ${className ?? ''}`}
+          style={style}
+          onClick={onClick}
+        >
+          {children}
           {cardData.map((card, index) => {
             const baseClassName = `card flex flex-col justify-between relative min-h-[300px] w-full p-5 rounded-[20px] cursor-pointer border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''
