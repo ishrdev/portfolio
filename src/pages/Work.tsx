@@ -13,7 +13,10 @@ function Work() {
     <>
       <div className="flex flex-col w-full justify-center items-center-safe px-32 py-8 gap-16">
         <h1 className='title text-left w-full'>MY WORK</h1>
-        <p className='text-left w-full'>Browse through my projects and get to know my working process!</p>
+        <p className='text-left w-full'>
+          Explore a selection of projects showcasing my work in UX/UI design, frontend 
+          development, and interactive digital experiences.
+        </p>
         <div className='flex flex-col w-full gap-8'>
           <div className='flex gap-6'>
             <div className='w-1/2'>
@@ -25,7 +28,9 @@ function Work() {
             </div>
             <div className='flex flex-col w-1/2 text-left gap-4'>
               <h2 className='title'>FairGig</h2>
-              <p>Tracking and comparing income based on anonymous data</p>
+              <p>A UX/UI design project focused on developing a mobile app for gig workers that enables income tracking, 
+                anonymized pay comparison, and data-driven insights to increase transparency in platform-based work.
+              </p>
               <div className='flex flex-wrap w-full gap-4'>
                 <TechTag name='Figma' icon={logos.figma}/>
                 <TechTag name='Affinity' icon={logos.affinity}/>

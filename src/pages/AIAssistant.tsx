@@ -92,12 +92,12 @@ function AIAssistant() {
           </p>
         </div>        
         <div className="flex gap-4 my-4">
-          <img src={LeereKonvoLofi} alt="Empty Conversation Design Idea" className="w-1/2 rounded-2xl"  />
-          <img src={KonvoPDFLofi} alt="Conversation Design Idea" className="w-1/2 rounded-2xl"  />
+          <img src={LeereKonvoLofi} alt="Empty Conversation Design Idea" className="w-1/2 rounded-2xl" />
+          <img src={KonvoPDFLofi} alt="Conversation Design Idea" className="w-1/2 rounded-2xl" />
         </div>
         <div className="flex gap-4 my-4">
-          <img src={LofiFinal} alt="Final LoFi Design" className="w-1/2 rounded-2xl"  />
-          <img src={HifiFinal} alt="Final HiFI Design Prototype" className="w-1/2 rounded-2xl"  />
+          <img src={LofiFinal} alt="Final LoFi Design" className="w-1/2 rounded-2xl" />
+          <img src={HifiFinal} alt="Final HiFI Design Prototype" className="w-1/2 rounded-2xl" />
         </div>
       </div>
       <div className="flex flex-col gap-4">
