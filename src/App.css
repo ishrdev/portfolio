@@ -37,6 +37,21 @@ section {
   animation-duration: 2s;
 }
 
+.group:hover .hover-animate {
+  transform: translateY(-2px) scale(1.04);
+  color: #a073ed;
+  text-decoration: underline;
+}
+
+.group:hover .hover-beat-fade {
+  animation: fa-beat-fade 2s ease-in-out;
+}
+
+.hover-animate {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

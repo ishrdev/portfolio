@@ -3,6 +3,8 @@ import MagicBento from '../components/MagicBento'
 import logos from '../assets/logos.tsx'
 import Separator from '../components/Seperator.tsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown, faAnglesRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 import '../App.css'
 
@@ -50,6 +52,12 @@ export default function Home() {
     {name: 'Jira', logo: logos.jira},
   ]
   
+  const scrollToWork = () => {
+    document.getElementById("work")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+
   return (
     <div className='grid gap-2'>
       <div className="block absolute top-0 left-0 w-full h-screen -z-1 row-start-1 col-start-1">
@@ -62,59 +70,65 @@ export default function Home() {
           warpAmount={0}
         />
       </div>
-      <section id='home' className='row-start-1 col-start-1 justify-around'>
-        <div className='flex flex-col h-svh content-center justify-evenly justify-items-center px-8'>
-          <div className='flex flex-col gap-16'>
-            <div className='title md:text-6xl -mb-8 text-4xl'>ISHARA MUSIPPATHTHU</div>
+      <section id='home' className='row-start-1 col-start-1 mx-32'>
+        <div className='flex flex-col flex-wrap h-svh justify-evenly'>
+          <div className='flex flex-col flex-wrap gap-16'>
+            <div className='title text-4xl md:text-6xl -mb-8 '>ISHARA MUSIPPATHTHU</div>
             <p className='text-xl'>UX/UI Designer • Frontend Developer</p>
-            <p className='text-2xl'>Designing intuitive digital experiences through user-centered design — and bringing them to life with code.</p>
+            <p className='text-2xl'>Designing intuitive digital experiences through user-centered design — 
+              and bringing them to life with code.
+            </p>
           </div>
-          <div>
+          <div className='flex flex-col items-center py-4'>
             <p className='text-xl'>Let's connect!</p>
-            <div className='w-full flex align-middle justify-center'>
-              <a href="https://www.linkedin.com/in/ishara-musippaththu" target="_blank">
+            <div className='flex justify-center'>
+              <a href="https://www.linkedin.com/in/ishara-musippaththu" target="_blank" rel="noopener noreferrer">
                 <img src={logos.linkedIn} className="logo" alt="LinkedIn logo" />
               </a>
-              <a href="https://vite.dev" target="_blank">
+              <a href="https://github.com/ishrdev" target="_blank" rel="noopener noreferrer">
                 <img src={logos.github} className="logo" alt="Github logo" />
               </a>
             </div>
           </div>
-          <div className='-my-50 w-full'>
+          <div className='w-full'>
             <FontAwesomeIcon 
             icon={faAnglesDown}
             size="2xl"
             beatFade
-            className='slow-beat-fade cursor-pointer'
-            onClick={() => {
-              document.getElementById("work")?.scrollIntoView({
-                behavior: "smooth"
-              });
-            }}
+            className='slow-beat-fade cursor-pointer mt-4'
+            onClick={scrollToWork}
             />
           </div>
         </div>
       </section>
-      <section id='work'className='flex justify-center'>
-        <div className='flex flex-col flexstart'>
-          <div className="title text-2xl text-left mb-8">SELECTED WORK</div>
-          <MagicBento 
-            textAutoHide={true}
-            enableStars={false}
-            enableSpotlight
-            enableBorderGlow={true}
-            enableTilt={false}
-            enableMagnetism={false}
-            clickEffect
-            spotlightRadius={410}
-            particleCount={12}
-            glowColor="132, 0, 255"
-            disableAnimations={false}
-          />
-          <div className="text-xl mt-12">See more projects</div>
+      <section id='work'className='mx-32'>
+        <div className='flex flex-col items-center w-full'>
+          <div className="title text-2xl text-left mb-8 w-full">SELECTED WORK</div>
+          <div className='w-full flex justify-center'>
+            <MagicBento 
+              textAutoHide={true}
+              enableStars={false}
+              enableSpotlight
+              enableBorderGlow={true}
+              enableTilt={false}
+              enableMagnetism={false}
+              clickEffect
+              spotlightRadius={410}
+              particleCount={12}
+              glowColor="132, 0, 255"
+              disableAnimations={false}
+            />
+          </div>
+          <Link to='/work' className="text-xl mt-12 group cursor-pointer flex justify-center items-center gap-4">
+            <span className='hover-animate'>See more projects</span>
+            <FontAwesomeIcon
+            icon={faAnglesRight}
+            className='hover-animate hover-beat-fade'
+            />
+          </Link>
         </div>
       </section>
-      <section id='skills' className='flex justify-center'>
+      <section id='skills' className='mx-32'>
         <div className='flex flex-col content-center justify-center'>
           <div className='title text-2xl text-left mb-8'>SKILLS</div>
           <div>
