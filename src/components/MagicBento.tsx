@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom'
 import fairgig from '../assets/images/fairgig/fairgig_cover.png'
 import aiAssistant from '../assets/images/aiAssistant/ai_assistant_cover.png'
+import portfolio from '../assets/images/portfolio/portfolio_cover.png'
 import blck from '../assets/images/blck/blck_mockup.png'
 
 export interface BentoCardProps {
@@ -50,6 +51,7 @@ const cardData: BentoCardProps[] = [
     description: 'Showcasing my work and skills',
     label: 'Portfolio',
     route: '/projects/portfolio',
+    image: portfolio
   },
   {
     color: '#060010',

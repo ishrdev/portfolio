@@ -6,6 +6,7 @@ import Work from './pages/Work.tsx'
 import FairGig from './pages/Fairgig.tsx'
 import AIAssistant from './pages/AIAssistant.tsx'
 import BLCK from './pages/BLCK.tsx'
+import Portfolio from './pages/Portfolio.tsx'
 import Zoetrope from './pages/Zoetrope.tsx'
 import Onirique from './pages/OniriqueHotels.tsx'
 import Passport from './pages/Passport.tsx'
@@ -23,6 +24,7 @@ function App() {
           <Route path='/projects/fairgig' element={<FairGig />}/>
           <Route path='/projects/ai-chatbot' element={<AIAssistant />}/>
           <Route path='/projects/blck' element={<BLCK />}/>
+          <Route path='/projects/portfolio' element={<Portfolio />}/>
           <Route path='/projects/zoetrope' element={<Zoetrope />}/>
           <Route path='/projects/onirique-hotels' element={<Onirique />}/>
           <Route path='/projects/fictive-passport' element={<Passport />}/>

@@ -4,6 +4,7 @@ import logos from '../assets/logos'
 import fairgig from '../assets/images/fairgig/fairgig_cover.png'
 import aiAssistant from '../assets/images/aiAssistant/ai_assistant_cover.png'
 import blck from '../assets/images/blck/blck_mockup.png'
+import portfolio from '../assets/images/portfolio/portfolio_cover.png'
 import zoetrope from '../assets/images/zoetrope/zoetrope_cover.png'
 import onirique from '../assets/images/onirique/onirique_cover_shot.png'
 import passport from '../assets/images/passport/passport_shot.png'
@@ -87,13 +88,13 @@ function Work() {
               <Card
                 title="Portfolio"
                 route="/projects/portfolio"
+                image={portfolio}
               />
             </div>
             <div className='flex flex-col w-1/2 text-left gap-4'>
               <h2 className='title'>Personal Website</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos qui? Iusto repudiandae minus, 
-                ipsa placeat quasi aspernatur inventore mollitia. Reprehenderit quaerat accusamus sapiente vero aperiam 
-                repellendus vitae soluta eius!</p>
+              <p>A personal portfolio project designed to showcase my work and continuously evolve my skills as a UX/UI 
+                designer and frontend developer.</p>
               <div className='flex flex-wrap w-full gap-4'>
                 <TechTag name='Figma' icon={logos.figma}/>
                 <TechTag name='React' icon={logos.react}/>
