@@ -4,8 +4,18 @@ import PortfolioBanner from '../assets/images/portfolio/portfolio_banner.png'
 import OlderVer from '../assets/images/portfolio/older_version.gif'
 import ProjectOld from '../assets/images/portfolio/projects_old.png'
 import ProjectNew from '../assets/images/portfolio/projects_new.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 function Portfolio() {
+
+  const improvements = [
+    'Transition to a component-based architecture',
+    'Improved navigation and user flow',
+    'Cleaner layout and visual hierarchy',
+    'More maintainable and scalable code structure'
+  ]
+
   return (
     <>
     <div className=" relative h-[50%] w-full overflow-hidden">
@@ -102,6 +112,23 @@ function Portfolio() {
           <img src={OlderVer} alt="Old Portfolio Version" className="rounded-2xl mb-4"/>
             <p>Older Portfolio Version</p>
         </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title text-lg">Key improvements</h2>
+        <ul>
+          {improvements.map((item, index) => (
+            <li key={index} className="mb-4">
+              <FontAwesomeIcon icon={faCaretRight} className='mr-2'/>{item}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="flex flex-col gap-4">
+        <h2 className="title text-lg">Challenges and Learnings</h2>
+        <p>One of the main challenges was transitioning from a traditional multi-page setup to a component-based architecture. 
+          This required rethinking how to structure layouts and reuse UI elements efficiently. Through this project, I 
+          strengthened my understanding of scalable frontend development and user-centered design, while learning how to 
+          iteratively improve both code structure and user experience.
+        </p>
       </div>
     </div>
     </>
