@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home.tsx'
+import ScrollToTop from './components/ScrollToTop.tsx'
 import Navbar from './components/Navbar'
 import Work from './pages/Work.tsx'
 import FairGig from './pages/Fairgig.tsx'
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter basename='/portfolio'>
+        <ScrollToTop/>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home />}/>
