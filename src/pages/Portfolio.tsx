@@ -58,6 +58,12 @@ function Portfolio() {
         implementation into a scalable, component-based React application. The focus was on improving user experience, 
         structure, and maintainability while creating a clean and intuitive interface to present my projects effectively.
       </p>
+      <div className="flex flex-col gap-4">
+        <h2 className="title text-lg">Project Goal</h2>
+        <p>The goal was to create a clean, user-friendly platform to present my projects in a structured and professional 
+          way, while building a scalable foundation for future improvements and expanding my frontend and UX skill set.
+        </p>
+      </div>
     </div>
     </>
   )
