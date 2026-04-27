@@ -16,8 +16,8 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar/>
-      <BrowserRouter>
+      <BrowserRouter basename='/portfolio'>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/work' element={<Work />}/>
