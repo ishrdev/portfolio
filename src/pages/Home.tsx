@@ -1,7 +1,7 @@
 import DarkVeil from '../assets/DarkVeil'
 import MagicBento from '../components/MagicBento'
 import logos from '../assets/logos.tsx'
-import Separator from '../components/Seperator.tsx'
+import Separator from '../components/Separator.tsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown, faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
